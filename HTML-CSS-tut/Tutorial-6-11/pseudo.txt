@@ -1,0 +1,26 @@
+pseudo classes and the elements , they're both kind of special keywords
+ that we can use in css and add the selectors so we can target elements,
+ when they are in a particular state.
+ 
+ 
+    pseudo classes
+   -----------------
+
+ -Styles element whenthey are in a particular state :
+
+:hover , :focus , :first-child of a parent , :active, :checked, :disabled, 
+:empty, :enabled, :first-of-type, :valid, :invalid, :link, :last-child, :visited S
+
+
+
+    pseudo elements
+    ---------------
+
+    This use the same idea of classes. This allows us to inject dynamic content, we can use after and before to inject content, but we ca also style the content inside of a tag. 
+    eg:
+    
+    ::after         p::after            insert content after every <p> element
+    ::before        p::before           insert content before every <p> element
+    ::first-letter  p::first-letter     we coukd target every first letter of the <p> element
+    ::first-line    p::first-line       we coukd target every first line of the <p> element
+    ::selection     p::selection        selects the protion of an element that is selected by a user

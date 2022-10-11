@@ -1,0 +1,13 @@
+THe picture tag:
+
+<picture>
+ <source srcset="small.jpg" media="(max-width:480px)">
+ <source srcset="small.jpg" media="(max-width: 768px)">
+ <img srcset=""big.jpg">
+</picture>
+
+Polyfill to allow browser which dont't support this new html picture element  to support it . 
+it fill in  the gaps in browsers so if they font natively support something then the polyfill will
+add in that support so that we can use the new feature in our code
+
+ picturefill: https://scottjehl.github.io/picturefill/#getting-started

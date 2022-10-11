@@ -1,0 +1,44 @@
+if wee need to style only a particular tag instead of style the whole tags we use class .
+All text with all p tags will be colored red.
+
+p{
+    color : red;
+}  
+
+----------------------------------------------------------------------------
+
+ instead if we need to style only selective p tags we use class
+
+ .(classname){
+    styles
+ }
+
+ in html : 
+ <p> This is a paragraoh tag</p>
+ < p class = "classname">This is a paragraph tag with class error</p> -----(this text will be in red)
+ <h2 class = "classname"> This heading will be in red color</h2>
+
+
+ ----------------------------------------------------------------------------
+
+
+ instead if we say 
+ p.error {
+    color: red;
+ }
+
+ we can only style this class inside p tags
+
+ -----------------------------------------------------------------------------
+ 
+  we can also combine two different existing or non-existing classes
+
+
+  p.newclass.success{
+
+  }
+or
+.newclass.success
+
+
+ 

@@ -1,0 +1,7 @@
+THe picture tag:
+
+<picture>
+ <source srcset="small.jpg" media="(max-width:480px)">
+ <source srcset="small.jpg" media="(max-width: 768px)">
+ <img srcset=""big.jpg">
+</picture>

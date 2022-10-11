@@ -1,0 +1,26 @@
+Properties used to control the layout and postion of elements on the web page
+
+POSTION :
+--------
+
+-Static : 
+    Html elements have this static as the default value where there's no positioning qualities is given to but it does keeps the element in normal document flow ofn the page.
+
+
+-Relative :
+    we can shift the elemnt around the page relative to its original postion in the page.
+    eg: {
+            position : relative;
+            left : 20px;  (moves 20 px away from left [from original pos])
+            bottom : 20px; (moves 20 away from the bottom [from orginal pos ])
+        }
+
+-Fixed :
+    It's gonna stay there even when we scroll the page it will always be fixed at the original space in the viewport
+
+
+-Absolute:
+    It allow us to position things absolutely relative to its closet parent which has also been given position property that is not static
+    
+-Sticky: 
+    A mixture of 'fixed' and 'static'

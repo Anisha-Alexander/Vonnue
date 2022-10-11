@@ -1,0 +1,50 @@
+ 
+/*    
+
+}
+.newclass{
+    color : red;
+
+ }
+.success{
+    font-style: italic;
+ }
+p.success.newclass{
+    border :1px dashed black
+}
+p.success.feedback{
+    color: greenyellow
+}
+#content{
+    background-color: yellow;
+} 
+ div p.newclass{ 
+    color: maroon;
+}   
+
+a[href="www.google.com"] 
+or 
+ a[href*="google"] anywhere
+ a[href$=".com"] Any value ends with .com
+ 
+{
+    background-color: rgb(41, 58, 24);
+    color: aqua;
+    text-decoration:none;
+    font-weight: bolder;
+    text-transform: uppercase;
+} */
+div {
+    color:lightcoral;
+    border: 1px solid black;
+    font-weight: bolder;
+    margin: 50px;
+}
+div p.newclass{
+    color :blue;
+    margin: inherit;
+    border:inherit
+}
+p{
+    color: deeppink;
+}

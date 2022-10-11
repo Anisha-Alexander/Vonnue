@@ -1,0 +1,51 @@
+*{
+    font-family: verdana;
+    margin: 0;
+}
+
+body{
+    background: rgb(255, 255, 255);
+}
+
+.wrapper{
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    
+}
+
+.flex-container{
+    display: flex; 
+    background: rgb(207, 203, 203);
+    flex-wrap:wrap;
+    
+}
+.box{
+    height: 100px;
+    min-width: 500px;
+    flex: grow 1;;
+    flex-basis: 200px; 
+    flex:1 /* means the flex basis, grow,shrink..is one */
+   
+}
+
+.one{
+    background: red;
+    flex-grow: 0;
+    flex-shrink: 0; 
+     flex-basis: 100px; 
+}
+.two{
+    background:blue;
+     flex-grow: 0;
+    flex-shrink: 0; 
+     flex-basis: 200px; 
+
+}
+.three{
+    background:green;
+     flex-grow:0;
+    flex-shrink:0; 
+     flex-basis: 300px; 
+}
+

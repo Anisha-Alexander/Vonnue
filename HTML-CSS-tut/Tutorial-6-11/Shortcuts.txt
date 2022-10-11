@@ -1,0 +1,3 @@
+view> command palette> shortcuts search in vscode!
+alt click for multiple selection 
+ctrl+d for mutiple slection of same tags

@@ -1,0 +1,5 @@
+It is usually to pour downwards
+when it comes to css the rules cascading from top to bottom
+ie, css properties flowing down from parents to children and it encompasses really two different concepts "inheritance" and "specificity" 
+html elements can inherit css rules that are applied to their parent elements
+child elements inherit properties from parent element but not all properties are inherited, things like margin, padding, background styles and border are not inherited. Its mainly font , text styles and colors are inherited!

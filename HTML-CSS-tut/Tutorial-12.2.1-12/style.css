@@ -1,0 +1,174 @@
+.pa{
+    width: 50%;
+    margin: 20px;
+    padding: 100px;
+    border: 5px solid yellow;
+    display: inline-block ;
+    margin-top: 80px;
+
+
+}
+p.lorem{
+    padding: 20px;
+    background-color: slategray;
+    font-family: arial;
+    line-height: 1.4em;
+}
+ /* floating elements 
+floating used to postion content to very left or very right of a parent element */
+
+.wrapper{
+    background-color: rgb(215, 228, 190) ;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    position : relative;
+    z-index: 0;
+
+}
+
+.wrapper:after{
+    content:"";
+    display:block;
+    clear: both;
+}
+
+img{
+    float:left;
+    margin: 10px;
+    display:flex;
+ }
+ .blue{
+    background-color: blue;
+    float :right;
+ }
+ .red{
+    background-color: red;
+    float: left;
+    margin:20px;
+
+ }
+ .green{
+    background-color: green;
+    float: right;
+ }
+ .box{
+    padding: 20px;
+    width: 70%;
+    margin: 20px; 
+    border: 1px solid black;
+    height: 100px;
+    width : 100px;
+ } 
+ .services{
+    max-height: 150px;
+    overflow:scroll;
+ }
+
+ .services:after{
+    content: " ";
+    display:block;
+    clear: both;
+ }
+.service h2, .service p{
+    color:rgb(240, 214, 214);
+    margin: 10px 0;
+    text-align: center;
+}
+.service{
+    float: left;
+    background: rgb(70, 67, 67);
+    width: 28.90%;
+    margin: 1%;
+    padding: 1%;
+    height: 140px;
+    border: 2px solid black;
+    position: relative;
+}
+.service:nth-child(1){
+    top: 5px;
+
+    
+}
+.service:nth-child(2){
+    top: 15px;
+}
+.service:nth-child(3){
+    top: 20px;
+}
+
+.content{
+    padding: 10px;
+    background: rgb(161, 161, 161);
+    clear:left;
+    margin-top: 50px;
+    position: relative;
+    left: 0px;
+
+}
+.content p{
+    -webkit-column-count: 3;
+    column-count: 3;
+    -webkit-column-gap: 50px;
+    column-gap: 50px;
+    -webkit-column-rule: 2px solid #ccc;
+    column-rule: 2 px solid #ccc;
+    text-align: justify;
+}
+section ,aside{
+    
+    float: left;
+    width: 40%;
+    padding: 1%;
+    margin: 1%;
+    background-color: #f2f2ff;
+    margin-top: 50px;
+}
+.column:after{
+    display: block;
+    content: "";
+    clear: both;
+
+}
+
+#banner{
+    max-height:300px;
+    overflow: scroll;
+    margin:1%;
+    position: relative;
+    z-index: 2;
+
+}
+#banner h2{
+    position: absolute;
+    top: 0%;
+    margin: 0;
+    width:100%;
+    text-align: center;
+    color: rgb(221, 42, 147);
+}
+
+nav{
+    background: #333;
+    padding: 2px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+
+}
+ 
+nav ul::after{
+    content: "";
+    display: block;
+    clear:both;
+}
+nav li{
+    list-style-type: none;
+    margin: 0 10px;
+    color: #fff;
+    float: right;
+}
+
+

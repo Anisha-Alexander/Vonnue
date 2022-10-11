@@ -1,0 +1,65 @@
+    Positioning introduction(s)
+   -------------------------------
+
+1. Box model review
+        It allows us to add border around elements, and define spaces betweeen elements.
+        (border, margin, padding, element,width,height)
+
+2. Normal document flow:
+        It is the normal document flow of the webpage ,and how they are presented before applying 
+        anykind of postioning css to them, Normally inline-elements are stacked left to right 
+        and block elements are stacked on top of the other. 
+
+3. Floating elements: 
+        It is one of then most used techniques in page layouts for positioning content and lets us position 
+        an element to the very left of very right of a parent element adn doing so it removes itself that normal doc flow.
+        It was designed to a developer could wrap text arounnd an image alos now it also ued to make text columns, grid galleries etc
+        float:(left, right)
+
+4. Clearing floats:
+        We floated an elementit took it out the normal doc flow and whatever was under that element scooted upwards bcz,
+        the floated elemnt no longer occupies any height in normal document flow
+        we have to celar floats so we have to say to the normal document flow that there's float above us which we want to clear and we're goining to restart NDF after those floats this i sthe clear property
+        clear: (both,left,right)
+
+5. Floating columns:
+        Creating content column using floats.
+        [secction{ float:left; width:46%; papdding:1%; margin:1%; background:grey; }]
+        [.content:after{ display:block; content:""; clear:both; }]
+         
+6. Using text columns :
+        Spliting the text into columns.
+        [.content p{ 
+            -webkit-column-count: 3;
+            column-count: 3;
+            -webkit-column-gap:50px;
+            column-gap:50px;
+            -webkit-column-rule:1px solid color;
+            column-rule:1px solid color;
+            text-align: justify
+
+        }]
+
+7. Relative Position:
+        Relative: The element is shifted from the original postion to the 
+        mentioned postion but the space occupied for the tag will be there itsself
+        Static
+        Absolute
+        Fixed
+        Inherit]
+
+
+8. Absolute Position : ( refer tut 6-11)
+9. Fixed Position : (refer tut 6-11)
+10. Z-index & Stacking : 
+        Usually the layout is x y . That is 2 dimensional
+        When we place the nav element in the top and give the postition fixed the element comming after that in the stcak will overlap through that. To avoid that we fix the bar on tye top using z-index  position value
+        assingn the z index number which evr number it is , assign the highest value which shouldn appear on the top
+        z-index: value highest assigned index will on the top of the stack.
+
+11. Clipping content :
+        the overflown content will be hidden visible we can scroll it 
+        .class{
+            max-height:150px;
+            overflow: hidden, scroll, visible(default) etc..
+        }

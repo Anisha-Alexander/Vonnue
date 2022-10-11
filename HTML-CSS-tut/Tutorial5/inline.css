@@ -1,0 +1,40 @@
+h1{
+    color :darkred;
+    background-color : grey;
+    font-size: 50px ;
+    text-decoration: line-through ;
+    font-family: Arial;
+    text-align: center;
+}
+h2{
+    color:aqua;
+    font-size: 30px ;
+    text-decoration : overline ;
+    text-align: right ;
+}
+p{
+    color :violet;
+    text-align: left;
+    line-height: 30px ;
+    letter-spacing: 3px;
+    column-count: 3 ;
+    column-gap: 60px;
+}
+div{
+    color: blue ; 
+}
+ul{
+    border-width: 4px ;
+    border-style: solid;
+    border-color: brown;
+    /* or instead of giving 3 lines we can make it in one */
+    /* size type color is given below */
+    border: 4px solid brown;
+    border-bottom : 4px dotted brown;
+}
+li{
+    list-style-type:lower-alpha;
+    /* text-shadow: 2px 2px rgb(74, 170, 214); */
+    text-shadow: 2px 2px #379e33;
+    /* hex colorcode # and 6 digits divied into 3-RGB #000000-BLACK ,#FFFFFF-white: */
+}

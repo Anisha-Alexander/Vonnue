@@ -1,0 +1,4 @@
+Viewport is the size of the window you're viewing your website on . 
+On desktop thats size is easy to see bcs its the default size of the browser,
+That can be full size of the browser or we can shrink accordingly. 
+The portion  of the browser that you're viewing  website in ,is the viewport on desktop, mobile etc. 

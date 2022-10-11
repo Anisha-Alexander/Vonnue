@@ -1,0 +1,15 @@
+span {
+    /* display:block; */
+    color:crimson;
+    margin: 30px ;
+    /* margin for inline css will only be in left and right of the element  */
+    /* but we can use inline-block */
+    display: inline-block;
+    /* in thhis we can add margin ton the top and bottom to it stays as the inline elemnt but acts as the block elemnt */
+}
+div {
+    /* display: inline ; */
+    border:2px solid crimson;
+    margin:20px ;
+    padding: 20px ;
+}

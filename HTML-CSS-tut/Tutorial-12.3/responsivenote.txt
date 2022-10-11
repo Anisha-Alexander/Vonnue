@@ -1,0 +1,33 @@
+What is a responsive site?
+__________________________
+
+- People view websites in many different devices
+
+-Make the site easyb to use and easy on the eye, no matter which device it is viewed on 
+
+-Therefore we make our websites 'responsive' , meaning the design responds to the specification of the device
+
+
+Responsive from the offset !
+_____________________________
+
+-Responsive design shouldn't be an afterthrough or a side order tp your desktop website.
+
+-Think about responsive design from the very start
+
+-plan our content efficiently with all devices in mind.
+ 
+
+
+ Importance !
+ ___________
+ 
+ -Tons of new devices coming out which allows users to browse websites.
+
+ -No longer the 'norm' to view a site on a desktop.
+
+ -If you dont make your websites very mobile friendly, you'll miss out on alot of viewers.
+
+ 
+
+

@@ -1,0 +1,9 @@
+Fluid layouts :
+----------------
+
+Its uses relative measurements and respond to the width of the Viewportsize.
+Usually its better to use FLUID layout bcs we haeav varying different screen sizes 
+and we have to capture them all .FIXED layouts:
+---------------
+
+FIXED layout uses static measurements and do not respond to the width of the viewport

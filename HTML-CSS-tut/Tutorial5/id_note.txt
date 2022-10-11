@@ -1,0 +1,2 @@
+We can use id in only single elemnt we cant re use instead . 
+Usually prefer to use class

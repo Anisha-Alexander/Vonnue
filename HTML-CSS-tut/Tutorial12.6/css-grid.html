@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>CSS grids</title>
+    <style>
+        body{
+            color:#fff;
+            font-family: 'Nunito Semibold';
+            text-align: center;
+        }
+        #content{
+            display: grid;
+            /* grid-template-columns: 30% 20% 50%; */
+            /* grid-template-columns: 1fr 2fr 1fr; */
+            grid-template-columns: repeat(3,1fr);
+            /* grid-auto-rows:minmax(150px,auto); */
+            grid-template-rows:repeat(3,minmax(150px,auto));
+            /* grid-row-gap: 10px; */
+            /* grid-column-gap: 10px; */
+            grid-gap: 10px;
+            max-width: 960px;
+            margin: 0 auto;
+             
+        }
+        #content div{
+            background:#3bbced;
+            padding: 50px;
+        }
+        #content div:nth-child(even){
+            background-color: #777;
+            padding: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="content">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+
+    </div>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit.  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia, deleniti asperiores explicabo praesentium quia dolorem deserunt, minus beatae aliquam, libero nostrum voluptatibus eveniet. Corporis vero est quaerat ex delectus minima. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta obcaecati, veniam provident consectetur ea voluptas modi eius eos esse dignissimos ad hic repellendus quae. Eius optio esse vero rem unde? .lorem Laudantium voluptatibus sequi deserunt pariatur doloribus ab non voluptas in inventore veniam assumenda perspiciatis, ullam asperiores ipsam consequatur libero? Assumenda, omnis consequatur!
+</body>
+</html>

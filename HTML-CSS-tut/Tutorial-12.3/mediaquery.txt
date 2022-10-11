@@ -1,0 +1,13 @@
+MEDIA QUERIES 
+_______________
+
+- Allows us to create CSS rules based on various parameters(Viewportsize, device type etc.)
+- We can arrange our layout to suit a wide variety of diffrent device/screen sizes
+ 
+ SYNTAX: 
+ -------
+
+ @media <media-type> and (expressions){ }
+
+eg:     @media TV and (min-width: 1200px){}
+        @media screen and (max-width:800px) {}                                                                                                                                                 

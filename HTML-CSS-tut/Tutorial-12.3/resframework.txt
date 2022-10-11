@@ -1,0 +1,51 @@
+What is a framework?
+--------------------
+
+- A set of code practices bundled together in a package, which can help to solve a problem -HTML, JS, CSS& other files 
+
+- Makes a particular task much easier , (fluid responisve frameworks( creating responsive websites much easier)
+
+-One particular task is a responsive framework, desgined to make creating responsive websites easier
+
+- When we use a framework, we adopt the framework's code practises to make use of its features.
+
+
+
+Eg. for Responsive Frameworks:
+-------------------------------
+
+-Skeleton : a lightweight framework , it coems with simple grid system and a very small number of 
+features such as a small styling effects for froms and etc. Its good to start in this framework as 
+there's not much to learn
+
+-Foundation : It is a feature rich framework 
+
+-Bootstrap : It is the popular one in frameworks. It's also a feature-rich and comes with a nice grid.
+
+
+
+BOOTSRTAP:
+---------
+
+-One of its core aims is make creating reaponsive websites very easy 
+
+-Comes bundled with a fluid grid system based on CSS classes.
+
+-Also comes baked with other features such as sliders, drop-down menu's, pop-up etc.
+
+
+Gridsystem : Fluid Grids :
+---------------------------
+
+-Splits a web page up intoi columns, which we can slot our content onto 
+
+-Bootstrap uses a 12 column fluid grid system
+
+-The gridsystem automatically re-arranges the content to respond to smaller screens
+https://getbootstrap.com/docs/3.4/css/#grid refer
+
+eg: <div class="col-xs-12 col-sm-6 col-md-3">
+
+
+
+
