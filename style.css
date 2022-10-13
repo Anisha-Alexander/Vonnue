@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    gap: 20px;
+}
+header{
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    border: 1px solid white;
+    white-space: nowrap;
+    margin-top: 50px;
+    gap: 20px;
+    color: black;
+    background-color: white;
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+header h2{
+    font-family: sans-serif;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color:rgb(55, 136, 168);   
+    padding: 100px 100px; 
+    border-radius: 50%;
+    
+}
+main:hover{
+    border: 2px solid white;
+    box-shadow: 10px white;
+}
+.anchor-element-card{
+    background-color: cadetblue;
+    border-radius: 4px;
+    text-align: center;
+    padding: 20px 20px;
+    
+
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 26px;
+
+}
+.anchor-element-card:hover{
+    background-color: white;
+    color: black;
+}
+.anchor-element-card:hover a{
+    color: black;
+}
