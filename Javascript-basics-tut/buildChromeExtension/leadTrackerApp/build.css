@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif; 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    min-width: 600px;   
+}
+ 
+input{
+    border: 3px solid #dddddd;
+    width: 100%;
+    margin:60px 0px 20px;
+    height: 70px;
+    padding: 20px;
+    font-size: 25px;
+    box-sizing:border-box;
+}
+button{
+    min-width: 250px;
+    width: 20%;    
+    height: 60px;;
+    font-size: 20px;
+    background-color: rgb(48, 143, 48);
+    padding: 2px;    
+    color: white;
+    font-weight: 600;
+    border: none;
+    margin-bottom: 20px;
+}
+#dlt-btn{
+    background-color: white;
+    color:  rgb(48, 143, 48);
+    border:1px solid rgb(48, 143, 48);
+}
+ul{
+    margin: 60px;
+}
+li{
+    list-style-type: disc;    
+}
+li:hover{
+    color: rgb(92, 92, 201);
+    text-decoration: underline;
+}

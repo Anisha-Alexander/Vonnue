@@ -1,0 +1,55 @@
+.number{
+    padding: 20px;
+    /* background-color: aqua; */
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+}
+.number p{
+    width: 20px;
+    height: 20px;
+    /* background-color: yellow; */
+    border-bottom: 3px solid black;
+    text-align: center;
+}
+.buttons{
+    width: 100%;
+    /* background-color:blue; */
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+button{
+    padding: 20px 40px;
+}
+.sum-container{
+    width:100%;
+    display: flex;
+    /* background-color: aqua; */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.sum-container p{
+    margin: 20px 0 0;
+    padding: 0;
+    font-size: 20px;
+}
+.sum{
+    /* background-color: blue; */
+    display: flex;
+    justify-content: flex-end;
+    height: fit-content;
+
+}
+.sum p{
+    width: 30px;
+    height: 20px;
+    /* background-color: aliceblue; */
+    border-bottom: 3px solid black;
+    margin: 5px 0 0;
+    text-align: center;
+    padding-bottom: 3px;
+
+}

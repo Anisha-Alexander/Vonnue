@@ -1,0 +1,8 @@
+button{
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+}
+#error {
+    color:rgb(141, 44, 44);
+}
