@@ -1,0 +1,88 @@
+[
+    {  
+        "cardsLabelContainerMainHead":[
+            {
+                "labelText":"Discover one-of-a kind items from independent creators"
+            },
+            {
+                "cards":[
+                    {
+                        "imageURL":"https://i.etsystatic.com/16676438/c/1954/1954/0/0/il/2054a3/1825350041/il_300x300.1825350041_rvfe.jpg",
+                        "title":"Diwali"
+                    },
+
+                    {
+                        "imageURL":"https://i.etsystatic.com/24440180/r/il/cc8bc7/3094624694/il_300x300.3094624694_64up.jpg",
+                        "title":"Home & Living"
+                    },
+
+                    {
+                        "imageURL":"https://i.etsystatic.com/25473399/r/il/6cfb1f/4088005474/il_300x300.4088005474_foea.jpg",
+                        "title":"Clothing"
+                    },
+
+                    {
+                        "imageURL":"https://i.etsystatic.com/18077312/r/il/b10e09/2350226444/il_300x300.2350226444_odar.jpg",
+                        "title":"Jewellery"
+                    },
+
+                    {
+                        "imageURL":"https://i.etsystatic.com/30213933/c/1510/1510/342/335/il/ea97e0/3755997843/il_300x300.3755997843_9z68.jpg",
+                        "title": "Wall Art"
+                    },
+                    
+                    {
+                        "imageURL":"https://i.etsystatic.com/27502657/r/il/34ea55/2915113681/il_300x300.2915113681_jqpd.jpg",
+                        "title":"On Sale"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "header":
+            {
+                "title":"http://www.w3.org/2000/svg" ,
+                "signTxt":"Sign in",
+                "likeIcon":"http://www.w3.org/2000/svg",
+                "cartIcon":"http://www.w3.org/2000/svg",
+                "hamIcon":"<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' aria-hidden='true' focusable='false'><path d='M20 7H4c-.6 0-1-.4-1-1s.4-1 1-1h16c.6 0 1 .4 1 1s-.4 1-1 1zm-4.8 6H4c-.6 0-1-.4-1-1s.4-1 1-1h11.2c.6 0 1 .4 1 1s-.4 1-1 1zm4.8 6H4c-.6 0-1-.4-1-1s.4-1 1-1h16c.6 0 1 .4 1 1s-.4 1-1 1z'></path></svg>"
+            }
+        
+    },
+    {
+        "section":{
+            "label":"Shop our selections",           
+            "pictureCard":[
+                {                    
+                    "img":"https://i.etsystatic.com/22038449/r/il/d7ad4f/4046275650/il_340x270.4046275650_o3mk.jpg",
+                    "title":"The Diwali Shop"
+                    
+                },
+                {
+                    "img":"https://i.etsystatic.com/18899984/r/il/9dcc31/4228096205/il_340x270.4228096205_fueu.jpg",
+                    "title":"Everyday inspiration"
+                },
+                {
+                    "img":"https://i.etsystatic.com/32541884/r/il/a56807/3849973862/il_340x270.3849973862_p1w4.jpg",
+                    "title":"For your home"
+                },
+                {
+                    "img":"https://i.etsystatic.com/17600118/c/1132/903/0/0/il/8b4129/2591412730/il_340x270.2591412730_abof.jpg",
+                    "title":"Fashion Finds"
+                },
+                {
+                    "img":"https://i.etsystatic.com/30973456/c/1250/993/0/1148/il/7cfe1e/3769038215/il_340x270.3769038215_e2oq.jpg",
+                    "title":"Jewellery Shop"
+                },
+                {
+                    "img":"https://i.etsystatic.com/21689103/r/il/7d8081/3547847472/il_340x270.3547847472_2iqa.jpg",
+                    "title":"Kitchen and dining"
+                }
+            ]
+        }
+    }
+
+
+    
+]

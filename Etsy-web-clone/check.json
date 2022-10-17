@@ -1,0 +1,122 @@
+{
+    "header":{
+        "imgURL":"hai"
+    },
+
+
+    "body":{
+        "imgURL":"hai2",
+        "cards":[
+            {
+                
+            }
+        ]
+    },
+
+
+    "cards":[
+        {
+            "title":"Wall art",
+            "imageURL":"img.com"
+        },
+        {
+            "title":"clothing",
+            "imageURL":"img.com"
+        }
+
+    ]
+
+}
+
+.............................
+
+{
+    "cardsLabelContainerMainHead":[
+        {
+            "labelText":"Discover one-of-a kind items from independent creators"
+        },
+        {
+            "cards":[
+                {
+                    "imageURL":"images.com",
+                    "title":"Diwali"
+                },
+                {
+                    "imageURL":"image2.com",
+                    "title":"Home & Living"
+                },
+                {
+                    "imageURL":"image3.com",
+                    "title":"Clothing"
+                },
+                {
+                    "imageURL":"image4.com",
+                    "title":"Jewellery"
+                },
+                {
+                    "imageURL":"image5.com",
+                    "title": "Wall Art"
+                },
+                {
+                    "imageURL":"image3.com",
+                    "title":"On Sale"
+                }
+            ]
+        }
+    ]
+}
+
+
+
+
+
+
+.................................
+[
+    {
+        "header":[{"ye":"ye"}]
+    },
+    {
+        "main":[{
+            "cardsLabelContainerMainHead":[
+                {
+                    "labelText":"Discover one-of-a kind items from independent creators"
+                },
+                {
+                    "cards":[
+                        {
+                            "imageURL":"https://i.etsystatic.com/16676438/c/1954/1954/0/0/il/2054a3/1825350041/il_300x300.1825350041_rvfe.jpg",
+                            "title":"Diwali"
+                        },
+
+                        {
+                            "imageURL":"image2.com",
+                            "title":"Home & Living"
+                        },
+
+                        {
+                            "imageURL":"image3.com",
+                            "title":"Clothing"
+                        },
+
+                        {
+                            "imageURL":"image4.com",
+                            "title":"Jewellery"
+                        },
+
+                        {
+                            "imageURL":"image5.com",
+                            "title": "Wall Art"
+                        },
+                        
+                        {
+                            "imageURL":"image3.com",
+                            "title":"On Sale"
+                        }
+                    ]
+                }
+            ]
+        }]
+    }
+
+]

@@ -1,0 +1,206 @@
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+svg{
+    width: 24px;
+    height: 24px;
+}
+button{
+    background-color: transparent;
+}
+body{
+    line-height: 1.4;
+    font-size: 14px;
+}
+.nav-container{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 12px;
+}
+.nav-header-container-mob{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 48px;
+}
+.nav-title svg{
+    fill:#f1641e;
+    width: 60px;
+    height: 30px;
+}
+.search-input-container-tab{
+    display: none;
+}
+.nav-header-left-card{
+    display: flex;
+    font-size: 14px;
+    list-style-type: none; 
+    font-family: -apple-system,BlinkMacSystemFont,"Roboto","Droid Sans","Segoe UI","Helvetica",Arial,sans-serif;       
+}
+.nav-header-left-card li{
+    height: 48px;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+}
+#signin-btn{
+    padding: 0;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    
+}
+.nav-header-left-card li button{
+    /* border: none; */
+    padding: 9px 15px;
+    margin-right: 6px;
+    border: none;
+}
+.left-header-icon{
+    /* padding: 24px; */
+}
+.nav-header-left-card .left-header-icon svg{
+    width: 24px;
+    height: 24px;
+    
+}
+
+/* nav bar with search container mobile */
+.nav-main-container-mob{
+    display: flex;
+    height: 60px;
+    align-items: flex-start;
+}
+.nav-main-container-mob button#hamburger-btn {
+    padding: 12px;
+    padding-left: 0px;
+    border: none; 
+}
+.nav-main-container-mob button#hamburger-btn svg{
+    width: 24px;
+    height: 24px;       
+
+}
+.search-input-container-mob{
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    border: 2px solid #222;
+    border-radius: 96px;
+    box-shadow: 1px 2px 4px 0 rgb(34 34 34 / 10%) inset;
+    max-height: 48px;
+    background-color: rgba(34, 34, 34, 0.05);;
+}
+.search-box{
+    padding: 9px 42px 9px 18px;
+    font-size: 16px;
+    width: 100%;
+    border: none;
+    background-color: transparent;
+}
+.search-icon{
+    border: none;
+    padding: 11px 21px 11px 15px;
+
+}
+
+.search-icon svg{
+    width: 24px;;
+    height: 24px;
+}
+
+
+/* main */
+.main-container{
+    display: flex;
+    flex-direction: column;
+    background-color: #d7e6f5;
+    height: 296.5px;
+    position: relative;
+}
+.main-label-text{
+    font-size: 20px;
+    color: #212121;
+    font-weight: 300;
+    text-align: center;
+    font-family: "Guardian-EgypTT",Charter,"Charter Bitstream",Cambria,"Noto Serif Light","Droid Serif",Georgia,serif;
+    
+    padding: 18px 12px 0;
+    letter-spacing: 0.35;
+    line-height: 32px;
+}
+
+
+
+/* main bubble cards */
+.cards-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    /* background-color: yellow; */
+    top: 31%;
+    position: absolute;
+    width: 100%;
+
+}
+.img-title-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 140px;
+}
+main .card-img img{
+    max-width:87.28px;
+    border-radius: 50%;
+}
+main .card-img{
+    width: fit-content;
+    height: fit-content;
+    /* background-color: teal;     */
+}
+main .card-img-title{
+    font-family: "Graphik Webfont",-apple-system,"Helvetica Neue","Droid Sans",Arial,sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.1px;
+    line-height: 18px;
+}
+/* section main with cards */
+
+.section-main{
+    margin-top: 100px;
+    background-color: teal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 6px;
+}
+.section-main-img-cards-cont{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.section-main-img-cards-cont a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 6px;
+    border-radius: 20px;
+    border: 1px solid white;
+}
+.section-main-img-cards-cont a .section-main-img-box{
+    border-radius: inherit;
+    width: 100%;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.section-main-img-cards-cont a .section-main-img-box img{
+    width: 100%;
+    border-radius: inherit;
+}
