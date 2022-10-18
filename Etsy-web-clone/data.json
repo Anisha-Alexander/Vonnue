@@ -52,7 +52,7 @@
     },
     {
         "section":{
-            "label":"Shop our selections",           
+            "label":"Shop our selections",              
             "pictureCard":[
                 {                    
                     "img":"https://i.etsystatic.com/22038449/r/il/d7ad4f/4046275650/il_340x270.4046275650_o3mk.jpg",
@@ -81,8 +81,109 @@
                 }
             ]
         }
+    },
+    {
+        "article":{
+            "artlabel":"Fresh from the blog",
+            "imgTextBox":[
+                {
+                    "imgURL":"https://i.etsystatic.com/inv/25d482/4004818446/inv_620x495.4004818446_ag7rsamq.jpg?version=0",
+                    "title":"Inspiration",
+                    "desc":"5 Ideas for a Sip and Paint Night with Friends",
+                    "para":"Discover beginner-friendly ideas and exact steps for hosting a fun sip and paint night with friends."
+                },
+                {
+                    "imgURL":"https://i.etsystatic.com/inv/781229/4295053145/inv_425x340.4295053145_2edho3n7.jpg?version=0",
+                    "title":"Shopping Guides",
+                    "desc":"11 Jackets and Scarves for That In-Between Weather",
+                    "para":"From pashima stoles to reversible jackets ,these wardrobe essentials will become your fall favourites."
+                },
+                {
+                    "imgURL":"https://i.etsystatic.com/inv/703647/4239041258/inv_425x340.4239041258_c3peyujd.jpg?version=0",
+                    "title":"Shopping Guides",
+                    "desc":"How To Give Your Home a Festive Season Makeover",
+                    "para":"Everything you need to decorate your home fro Diwali this year."
+                }
+                
+            ]
+        }
+    },
+    {
+        "inputBtnCont":{
+            "label":"Get unique gift ideas and so much more delivered right to your inbox",
+            "placeholder":"Enter your email",
+            "button":"Subscribe"
+        }
+    },
+    {
+        "footer":{
+            "labelHead":"What is Etsy",
+            "labelLink":"Read our wonderfully wierd story",
+            "descBox":[{
+                "head":"A community doing good",
+                "para":"Etsy is a global online marketplace, where poeple comme together to make sell, buy and collect unique items. We're also a community pushing for positive change for small business, people, and the planet.",
+                "paraURL":" Here are some of the ways we're making a positve impact, together"
+            },
+            {
+                "head":"Support independent creators",
+                "para":"There's no Etsy warehouse - just millions of people selling the things they love we make the whole process easy, helping you connect directly wigth makers to find something extraordinary.",
+                "paraURL":" "
+            },
+            {
+                "head":"Peace of mind",
+                "para":"Your privacy is the highest priority of our dedicated team. And if you ever need assistance, we are always ready to step in for suport",
+                "paraURL":" "
+            }
+            ],
+            "storyFootHead":"Have a question? Well, we've got some answers.",
+            "storyFootLink":"Go to Help Center",
+            "taglineTxt":"Etsy id powered by 100% renewable electricity",
+            "navElements":[
+                {
+                    "title":"Shop",
+                    "options":[
+                        {"value":"Gift cards"},
+                        {"value":"Site Map"},
+                        {"value":"Etsy blog"},
+                        {"value":"Etsy United Kingdom"},
+                        {"value":"Etsy Germany"},
+                        {"value":"Etsy Canada"}                        
+                    ]               
+                },
+                {
+                    "title":"Sell",
+                    "options":[
+                        {"value":"Sell Easy"},
+                        {"value":"Teams"},
+                        {"value":"Forums"},
+                        {"value":"Affliates"}                                           
+                    ]
+                },
+                {
+                    "title":"About",
+                    "options":[
+                        {"value":"Etsy, Inc."},
+                        {"value":"Policies"},
+                        {"value":"Invetsors"},
+                        {"value":"Careers"},
+                        {"value":"Press"},
+                        {"value":"Impact"},                     
+                        {"value":"Legal imprint"}
+
+                    ]
+                },
+                {
+                    "title":"Help",
+                    "options":[
+                        {"value":"Help Centre"},
+                        {"value":"Privacy settings"}                        
+                    ]
+                }
+            ],  
+            "coprightCard":"&#169; 2022 Etsy, Inc."
+        }
+        
     }
-
-
+    
     
 ]
