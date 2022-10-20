@@ -29,9 +29,21 @@ navCont.innerHTML+=` <div class="nav-header-container-mob">
             </div>
         </div>`
 
-//hedaer responsive
-
-
+//heeader responsivel
+let searchBtn = document.getElementById('search-icon')
+console.log(searchBtn)
+let searchText =document.getElementById('search-box')
+searchBtn.addEventListener('click',()=>{
+    alert('hello')
+})
+searchText.addEventListener('click',() =>{
+    searchBtn.classList.add('background')
+    searchText.classList.add('background')
+})
+// window.addEventListener('click',()=>{
+//     searchBtn.classList.remove('background')
+//     searchText.classList.remove('background')
+// })
 
 // main for mobile
 mainContainer.innerHTML += `<h1 class="main-label-text">${dataBase[0].cardsLabelContainerMainHead[0].labelText}</h1>`
@@ -224,7 +236,6 @@ footStoryCards()
 const clickMe = () =>{
     alert('hello')
 }
-
 function footNavContainerHead(){
 
     const footer = document.getElementById('foot-nav-cont-id')
@@ -247,7 +258,7 @@ function footNavContainerHead(){
         // footNavCard.classList.add('display-list')
         
 
-        footNavCard.innerHTML = `<button class="foot-nav-head" onclick= "clickfunct()">
+        footNavCard.innerHTML = `<button class="foot-nav-head">
                                     <p>${mainTitle}</p>
                                     <span><i class="fa fa-angle-down" aria-hidden="true"></i></span>
                                 </button>`
@@ -288,8 +299,31 @@ function footNavContainerHead(){
 footNavContainerHead()
 
 
+// nav element display
+
+// let footNavHead= document.querySelectorAll('.foot-nav-head')
+// console.log(footNavHead)
+// let elementListBox = document.querySelectorAll('.element-list-items')
+// console.log(elementListBox)
+// footNavHead.addEventListener('click', () =>{
+//     footNavHead.classList.add('hel')
+// })
 
 
+
+
+
+
+// let searchBtn1 = document.getElementById('search-icon')
+// console.log(searchBtn)
+// let searchText2 =document.getElementById('search-box')
+// searchBtn.addEventListener('click',()=>{
+//     alert('hello')
+// })
+// searchText.addEventListener('click',() =>{
+//     searchBtn.classList.add('background')
+//     searchText.classList.add('background')
+// })
 
 let navNthChild = document.querySelector('.foot-nav-box').lastChild
 console.log (navNthChild)
@@ -325,4 +359,89 @@ footFooter.innerHTML +=`<div class="foot-footer-container">
                         </div>`
 
 
+// for aside 
 
+
+const asideEl = document.getElementById('aside-el')
+console.log(asideEl)
+
+const asideElements= dataBase[6].aside
+console.log(asideElements)
+
+let asideElBoxhead= document.createElement('div')  //head-text-box of img-video-conatiner
+asideElBoxhead.classList.add('aside-head-text-box')
+
+asideElBoxhead.innerHTML +=`<span>${asideElements.label}</span>
+                            <h2>${asideElements.title}</h2>
+                            <p>${asideElements.text}</p>`
+asideEl.appendChild(asideElBoxhead)
+
+const imgsArr= dataBase[6].aside.imgs
+console.log(imgsArr)
+
+// let img=imgsArr.map((item) =>{
+//     return item.backURL
+
+// },[])
+let imgs=imgsArr.forEach((item) =>{
+    console.log(item) 
+    let div= document.createElement('div')
+    div.classList.add('card-box')
+    let vidformat="mp4"
+    let nw=item.backURL
+    let n= nw.includes(vidformat)
+    console.log(n)
+        if(n === true){
+            div.innerHTML +=`<video class = "my-vid" id="my-vid" src="${item.backURL}">`
+            console.log("hello")
+            let vidbtn= document.createElement('div')
+            vidbtn.classList.add('vid-btn')
+            vidbtn.innerHTML=`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><polygon points="4 4 4 20 20 12 4 4"></polygon></svg>`
+            div.appendChild(vidbtn)
+            
+        }
+        else{
+            div.innerHTML +=`<img  class="my-img" src ="${item.backURL}">`
+        }
+       
+    asideEl.appendChild(div)
+    let price= document.createElement('span')
+    price.classList.add('price-box')
+    price.innerHTML += `&#8377; ${item.cost}`
+    let find= []
+    find=document.querySelectorAll('.my-vid')
+    console.log(find)
+    let arrayVid= find.forEach((item,i) =>{
+        console.log(i)
+                item.addEventListener("mouseover",function(e){
+                    item.play(); 
+                    likeBtn.style.display='flex'   
+
+                 })
+                 item.addEventListener("mouseout",function(e){
+                    item.pause();  
+                    likeBtn.style.display='none'
+                                 
+                 })
+            
+    })
+    let likeBtn= document.createElement('div')
+    likeBtn.classList.add('like-btn')
+    likeBtn.innerHTML +=`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12,21C10.349,21,2,14.688,2,9,2,5.579,4.364,3,7.5,3A6.912,6.912,0,0,1,12,5.051,6.953,6.953,0,0,1,16.5,3C19.636,3,22,5.579,22,9,22,14.688,13.651,21,12,21ZM7.5,5C5.472,5,4,6.683,4,9c0,4.108,6.432,9.325,8,10,1.564-.657,8-5.832,8-10,0-2.317-1.472-4-3.5-4-1.979,0-3.7,2.105-3.721,2.127L11.991,8.1,11.216,7.12C11.186,7.083,9.5,5,7.5,5Z"></path></svg>`
+    div.appendChild(price)
+    div.appendChild(likeBtn)
+    
+    
+    
+})
+console.log(imgs)
+
+
+let asideElBoxfoot= document.createElement('div')
+asideElBoxfoot.classList.add('aside-foot-text-box')
+
+asideElBoxfoot.innerHTML +=`<p>${asideElements.para}</p>`
+
+asideEl.appendChild(asideElBoxfoot)
+const a = document.querySelectorAll('.like-btn')
+console.log(a)

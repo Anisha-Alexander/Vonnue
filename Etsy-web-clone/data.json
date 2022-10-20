@@ -183,6 +183,40 @@
             "coprightCard":"&#169; 2022 Etsy, Inc."
         }
         
+    },
+    {
+        "aside":{
+            "label":"Editor's Picks",
+            "title":"The Diwali Shop",
+            "text":"Shop these unique finds",
+            "imgs":[
+                {
+                    "backURL":"https://v-cg.etsystatic.com/video/upload/ac_none,du_15,q_auto:good/VID_20220831_083646_wtc2x8.mp4",
+                    "cost":"2,147"
+                },
+                {
+                    "backURL":"https://v-cg.etsystatic.com/video/upload/ac_none,du_15,q_auto:good/ezgif.com-gif-maker_1_j8wyq2.mp4",
+                    "cost":"1,885"
+                },
+                {
+                    "backURL":"https://v-cg.etsystatic.com/video/upload/ac_none,du_15,q_auto:good/VID_20220827_094115_wcqask.mp4",
+                    "cost":"859"
+                },
+                {
+                    "backURL":"https://i.etsystatic.com/16676438/c/1954/1552/0/114/il/2054a3/1825350041/il_680x540.1825350041_rvfe.jpg",
+                    "cost":"2,663"
+                },                
+                {
+                    "backURL":"https://v-cg.etsystatic.com/video/upload/ac_none,du_15,q_auto:good/VID_20220815_165013_b8nou4.mp4",
+                    "cost":"2,336"
+                },
+                {
+                    "backURL":"https://i.etsystatic.com/17612918/c/1945/1546/490/332/il/821bd7/3550189568/il_680x540.3550189568_n5cq.jpg",
+                    "cost":"2,147"
+                }
+            ],
+            "para":"Make your celebrations even more special this year with beautiful items from local sellers"
+        }
     }
     
     
