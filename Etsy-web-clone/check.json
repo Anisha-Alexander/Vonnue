@@ -120,3 +120,47 @@
     }
 
 ]
+
+
+
+
+for(let i=0;i<navElemlen;i++ ){
+        
+    navElemHead=(dataBase[5].footer.navElements[i].title)  
+    navUllist=(dataBase[5].footer.navElements[i].options).length
+    console.log(navUllist)                      
+    console.log(navElemHead)
+    let data =''
+    for(let j=0;j<navUllist;j++){        
+        let navUlInner=document.querySelector('.element-list-items')
+        navUlInner += `${dataBase[5].footer.navElements[i].options[j].value}`
+        data  = footNavContainer.innerHTML+=`<li>${navUlInner}</li>`
+    }
+
+    footNavContainer.innerHTML +=`<div class="foot-nav-card">
+                                    <div class="foot-nav-head">
+                                        <p>${navElemHead}</p>
+                                        <span><i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                                    </div>
+                                    <ul class="element-list-items">
+                                    ${ data} </ul>
+                                </div>`
+      
+    // for(let j=0;j<navUllist;j++){
+    //     navUlInner.innerHTML +=`<li>${dataBase[5].footer.navElements[i].options[j].value}</li>`
+    // }
+}
+
+
+
+
+
+footer.appendChild(footerNavContainer)  
+    function clickfunct(){
+        let btn=document.querySelector('.foot-nav-head')
+        console.log(btn)
+        btn.addEventListener('click',() =>{
+            footNavCard.classList.remove('foot-nav-card')
+        })
+    }
+    clickfunct()
