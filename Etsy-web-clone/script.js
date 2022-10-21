@@ -29,21 +29,67 @@ navCont.innerHTML+=` <div class="nav-header-container-mob">
             </div>
         </div>`
 
-//heeader responsivel
+//header responsive
 let searchBtn = document.getElementById('search-icon')
 console.log(searchBtn)
 let searchText =document.getElementById('search-box')
-searchBtn.addEventListener('click',()=>{
-    alert('hello')
-})
-searchText.addEventListener('click',() =>{
-    searchBtn.classList.add('background')
-    searchText.classList.add('background')
-})
+// searchBtn.addEventListener('click',()=>{
+//     alert('hello')
+// })
+function searchF(){
+    searchText.addEventListener('click',() =>{
+        searchBtn.classList.add('background')
+        searchText.classList.add('background')
+    })
+}
+searchF()
+function searchRF(){
+    searchText.removeEventListener('click',() =>{
+        searchBtn.classList.remove('background')
+        searchText.classList.remove('background')
+    })   
+}
+searchRF()
 // window.addEventListener('click',()=>{
 //     searchBtn.classList.remove('background')
 //     searchText.classList.remove('background')
 // })
+
+// header nav-main for desk
+
+console.log(navCont)
+let navMainDesk = document.createElement('div')
+navMainDesk.classList.add('nav-main-container-desk')
+let headNavBox= document.createElement('ul')
+headNavBox.classList.add('head-nav-box')
+navMainDesk.appendChild(headNavBox)
+let headNavElements=dataBase[1].headerDesk
+console.log(headNavElements)
+
+let navLiEl=0
+let navLiHref=0
+
+let headNavArr=headNavElements.forEach((item)=>{
+    navLiEl=document.createElement('li')
+    navLiEl.classList.add('nav-li-el')
+    headNavBox.appendChild(navLiEl)
+    navLiHref=document.createElement('a')
+    navLiHref.setAttribute("href","#")
+    navLiHref.innerHTML+=`${item.headLi}`
+    navLiEl.appendChild(navLiHref)
+    
+})
+
+let lastLi= navLiEl.lastChild
+console.log(lastLi)
+lastLi.innerHTML+=`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 5 22 12" width="16" height="12" aria-hidden="true" focusable="false"><path d="M5,6A1,1,0,0,0,4,7v3H5v9a1,1,0,0,0,1,1h5V6H5Z"></path><path d="M19,6H13.007A4.245,4.245,0,0,0,14.97,3.744a1.614,1.614,0,0,0-2.65-1.375,1.757,1.757,0,0,0-.315.324,1.753,1.753,0,0,0-.315-0.324A1.615,1.615,0,0,0,9.042,3.746,4.257,4.257,0,0,0,11.006,6H13V20h5a1,1,0,0,0,1-1V10h1V7A1,1,0,0,0,19,6Z"></path></svg>`
+
+
+
+navCont.appendChild(navMainDesk)
+
+
+
 
 // main for mobile
 mainContainer.innerHTML += `<h1 class="main-label-text">${dataBase[0].cardsLabelContainerMainHead[0].labelText}</h1>`
@@ -231,8 +277,6 @@ function footStoryCards(){
 footStoryCards()
 
 
-// let footNavContainer=document.querySelector('.foot-nav-container')
-// console.log(footNavContainer)
 const clickMe = () =>{
     alert('hello')
 }
@@ -255,8 +299,6 @@ function footNavContainerHead(){
 
         const footNavCard = document.createElement('div')
         footNavCard.classList.add('foot-nav-card')
-        // footNavCard.classList.add('display-list')
-        
 
         footNavCard.innerHTML = `<button class="foot-nav-head">
                                     <p>${mainTitle}</p>
@@ -285,15 +327,7 @@ function footNavContainerHead(){
     })
 
     footer.appendChild(footerNavContainer)  
-    // let elem=document.querySelector('.foot-nav-head')
-    // $('elem').click(function(){
-    //     if($(footNavCard).hasClass('foot-nav-card')){
-    //         $(this).addClass('display-lists')
-    //     }
-    //     else{
-    //         $(this).removeClass('display-lists')
-    //     }
-    // })
+   
     
 }
 footNavContainerHead()
@@ -342,20 +376,22 @@ navNthChild.innerHTML+=`<div class="help-social-container">
                         </div>`
 let footFooter =document.getElementById('footer-container')
 console.log(footFooter)
-footFooter.innerHTML +=`<div class="foot-footer-container">
-                            <div class ="lang-country-card">
-                                <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12,2A10,10,0,1,0,22,12,10.012,10.012,0,0,0,12,2ZM9,18.883v0.528A7.938,7.938,0,0,1,4.06,11.06l3.385,3.385a2.967,2.967,0,0,0,1.649,4.4ZM17.5,15a2.509,2.509,0,0,0,.5-0.05V15a0.992,0.992,0,0,0,.927.985A8,8,0,0,1,12,20c-0.216,0-.427-0.016-0.639-0.032l1.254-2.5-0.015.006A2.968,2.968,0,0,0,13,16a2.988,2.988,0,0,0-5-2.221V11H9a1,1,0,0,0,1-1V9a1,1,0,0,0,1-1,1,1,0,0,0,0-2H6.726A7.9,7.9,0,0,1,14,4.263V6a1,1,0,0,0,2,0V5.082a8.047,8.047,0,0,1,2,1.649V7H17a1,1,0,0,0,0,2h2.411a7.941,7.941,0,0,1,.326,1H17a2.556,2.556,0,0,0-2,2.5A2.5,2.5,0,0,0,17.5,15Z"></path></svg></span>
-                                <p>India &nbsp;&nbsp; | &nbsp;&nbsp; English (UK) &nbsp;&nbsp;| &nbsp;&nbsp; &#8377; (INR)</p>
-                            </div> 
-                            <div class="copy-terms-container">
-                                <p class="copyright-card">${dataBase[5].footer.coprightCard}</p>
-                                <div class="terms-box">
-                                    <a href="#">Terms of Use</a>
-                                    <a href="#">Privacy</a>
-                                    <a href="#">Interest-based ads</a>
-                                    <a href="#">Regions</a>                                
-                                </div>
-                            </div>            
+footFooter.innerHTML +=`<div class="foot-footer-container-back">
+                            <div class="foot-footer-container">
+                                <div class ="lang-country-card">
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12,2A10,10,0,1,0,22,12,10.012,10.012,0,0,0,12,2ZM9,18.883v0.528A7.938,7.938,0,0,1,4.06,11.06l3.385,3.385a2.967,2.967,0,0,0,1.649,4.4ZM17.5,15a2.509,2.509,0,0,0,.5-0.05V15a0.992,0.992,0,0,0,.927.985A8,8,0,0,1,12,20c-0.216,0-.427-0.016-0.639-0.032l1.254-2.5-0.015.006A2.968,2.968,0,0,0,13,16a2.988,2.988,0,0,0-5-2.221V11H9a1,1,0,0,0,1-1V9a1,1,0,0,0,1-1,1,1,0,0,0,0-2H6.726A7.9,7.9,0,0,1,14,4.263V6a1,1,0,0,0,2,0V5.082a8.047,8.047,0,0,1,2,1.649V7H17a1,1,0,0,0,0,2h2.411a7.941,7.941,0,0,1,.326,1H17a2.556,2.556,0,0,0-2,2.5A2.5,2.5,0,0,0,17.5,15Z"></path></svg></span>
+                                    <p>India &nbsp;&nbsp; | &nbsp;&nbsp; English (UK) &nbsp;&nbsp;| &nbsp;&nbsp; &#8377; (INR)</p>
+                                </div> 
+                                <div class="copy-terms-container">
+                                    <p class="copyright-card">${dataBase[5].footer.coprightCard}</p>
+                                    <div class="terms-box">
+                                        <a href="#">Terms of Use</a>
+                                        <a href="#">Privacy</a>
+                                        <a href="#">Interest-based ads</a>
+                                        <a href="#">Regions</a>                                
+                                    </div>
+                                </div>     
+                            </div>       
                         </div>`
 
 
@@ -373,7 +409,7 @@ asideElBoxhead.classList.add('aside-head-text-box')
 
 asideElBoxhead.innerHTML +=`<span>${asideElements.label}</span>
                             <h2>${asideElements.title}</h2>
-                            <p>${asideElements.text}</p>`
+                            <p>${asideElements.text} <i class="fa fa-arrow-right" aria-hidden="true"></i></p>`
 asideEl.appendChild(asideElBoxhead)
 
 const imgsArr= dataBase[6].aside.imgs
