@@ -169,3 +169,21 @@ footer.appendChild(footerNavContainer)
     asideEl.appendChild(div)
     
     
+
+
+    let divArr=[]
+    divArr=document.querySelectorAll('.my-vid')
+    let vidBtnArr=[]
+    vidBtnArr=document.querySelectorAll('.vid-btn')
+    let vidF=divArr.forEach((item)=>{
+        item.addEventListener("mouseover",function(e){
+            vidBtnArr.forEach((items)=>{
+                items.style.display='none'
+            })
+         item.addEventListener("mouseout",function(e){
+            vidBtnArr.forEach((items)=>{
+                items.style.display='none'
+            })
+            })
+        }) 
+       

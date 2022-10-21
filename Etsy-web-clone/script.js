@@ -391,7 +391,7 @@ let imgs=imgsArr.forEach((item) =>{
     let nw=item.backURL
     let n= nw.includes(vidformat)
     console.log(n)
-        if(n === true){
+        if(n){
             div.innerHTML +=`<video class = "my-vid" id="my-vid" src="${item.backURL}">`
             console.log("hello")
             let vidbtn= document.createElement('div')
@@ -403,6 +403,8 @@ let imgs=imgsArr.forEach((item) =>{
         else{
             div.innerHTML +=`<img  class="my-img" src ="${item.backURL}">`
         }
+        const a = document.querySelectorAll('.like-btn')
+console.log(a)
        
     asideEl.appendChild(div)
     let price= document.createElement('span')
@@ -411,16 +413,15 @@ let imgs=imgsArr.forEach((item) =>{
     let find= []
     find=document.querySelectorAll('.my-vid')
     console.log(find)
-    let arrayVid= find.forEach((item,i) =>{
-        console.log(i)
+    let arrayVid= find.forEach((item) =>{
                 item.addEventListener("mouseover",function(e){
                     item.play(); 
-                    likeBtn.style.display='flex'   
+
+                    // likeBtn.style.display='flex'   
 
                  })
                  item.addEventListener("mouseout",function(e){
-                    item.pause();  
-                    likeBtn.style.display='none'
+                    item.pause(); 
                                  
                  })
             
@@ -443,5 +444,3 @@ asideElBoxfoot.classList.add('aside-foot-text-box')
 asideElBoxfoot.innerHTML +=`<p>${asideElements.para}</p>`
 
 asideEl.appendChild(asideElBoxfoot)
-const a = document.querySelectorAll('.like-btn')
-console.log(a)

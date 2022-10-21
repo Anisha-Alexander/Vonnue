@@ -229,7 +229,7 @@ div.img-title-container:hover  p{
 }
 .card-box{
     width: 100%;
-    background-color: yellow;
+    /* background-color: yellow; */
     position: relative;
     border-radius: 5px;
     /* height: %; */
@@ -273,32 +273,48 @@ div.img-title-container:hover  p{
 }
 .card-box .price-box{
     position: absolute;
-    bottom: 2%;
+    bottom :0%;
     left:2%;
-    z-index: 3;
-    background-color: white;
+    z-index: -1;
+    background-color: transparent;
     padding: 6px 9px;
     border-radius: 15px;
     font-size: 13px;
-    border: 1px solid rgba(34,34,34,0.15);
+    border: none;
+    color: transparent;
+    /* display: none; */
     font-weight: 700;
-    display: none;
+    transition:  all 0.7s ease;
+    
+
+    
  }
+ .card-box:hover .price-box{
+    z-index: 2;
+    color: black;
+    /* border: 1px solid rgba(34,34,34,0.15); */
+    background-color: white;
+    bottom:  calc(10% - 10px);
+    left: 10px;
+    
+}
+ 
+
 
  .card-box .like-btn{
     position: absolute;
-    z-index: 3;
-    background-color: white;
+    z-index: 3;    
     border-radius: 50%;
     width: 30px;
     height: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
-    top: 2%;
+    top: 0%;
     right: 2%;
-    border: 1px solid rgba(34,34,34,0.15);
-    display: none;
+    background-color: transparent;
+    fill: transparent;
+    transition:  all 0.7s ease;
  }
 
  .card-box .like-btn svg{
@@ -306,7 +322,23 @@ div.img-title-container:hover  p{
     height: 18px;
  }
 
+/* card-box hovers */
 
+.card-box:hover .vid-btn{
+    display: none;
+}
+
+.card-box:hover .like-btn{
+    /* border: 1px solid rgba(34,34,34,0.15); */
+    background-color: white;
+    fill:black;
+    top:  calc(5% + 5px);
+    right: 2%;
+    
+}
+.card-box:hover .price-box{
+    display: flex;
+}
 
  /* ---------------------------------------------------- */
 
@@ -793,6 +825,8 @@ footer a{
         grid-template-columns:repeat(9,1fr);
         grid-template-rows: 306px 306px;
         height: 100%;
+        padding: 160px 36px 12px;
+        
     }
     aside div{
         height: 100%;
@@ -843,6 +877,7 @@ footer a{
         grid-column: span 3;
         font-size: 16px;
         justify-content: center;
+        align-items: center;
     }
 
     /* section main */
@@ -969,6 +1004,8 @@ footer a{
     .element-list-items li{
         padding: 6px 0px;
         white-space: nowrap;
+        font-size: 13px;
+        letter-spacing: 0.35px;
     }
     .social-card{
         flex-wrap: wrap;
@@ -983,3 +1020,102 @@ footer a{
     }
 }
 
+
+
+@media screen  and (min-width:960px) {
+   
+    /* bubble cards */
+    .main-label-text{
+        font-size: 32px;
+    }
+   .cards-container {
+        max-width: 1044px;
+        position: static;
+        margin: auto;
+        /* right: 50%; */
+        height: 166px;
+        margin-top: 22px;
+    }  
+    main .card-img img{
+        width: 114px;
+        height: 114px;
+        max-width: 114px;
+    }
+    main .card-img-title{
+        font-size: 16px;
+    }
+    /* aside */
+     
+    aside{
+        max-width: 1328px;
+        margin: auto;
+        
+    }
+
+    /* section */
+    section{
+        max-width: 1328px;
+        margin: auto;
+    }
+    .section-main-img-cards-cont {
+        display: flex;
+        
+    }
+    .section-main-img-cards-cont a:nth-child(6){
+        display: none;
+    }
+    /* blue box */
+    #input-button-container{
+        max-width: 1328px;
+        margin: auto;
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+   
+    article{
+        max-width: 1328px;
+        margin: auto;
+        margin-bottom: 60px;
+    }
+    #article-img-cards-cont{
+        max-width:1300px;
+        margin: auto;
+    }
+    /* footer */
+    #story-container #story-card{
+        display: flex;
+        gap: 36px;
+        max-width: 1328px;
+        margin: auto;
+        
+    }
+    #story-card .foot-story-card{
+        align-items: flex-start;
+        text-align: left;
+        max-width: 406.67px;
+    }
+    .foot-story-card h3{
+        font-size: 28px;
+        padding: 4px;
+    }
+    .blue-svg-border{
+        height: 50px;
+    }
+
+    .footer-main-head-box .blue-svg-border svg{
+        height: 51px;
+    }
+    .foot-nav-box{
+        width: 100%;
+        max-width: 1328px;
+        margin: auto;
+    }
+}
+
+/* destop */
+
+@media screen and (min-width : 1024px) {
+    
+   
+
+}
