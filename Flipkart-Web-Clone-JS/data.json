@@ -1,0 +1,35 @@
+{
+    "header":{
+        "mobile":{
+            "logo":"https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/logo_lite-cbb357.png",
+            "brandName":"Mi Mobiles",
+            "loginText":"Login"
+        }
+    },
+    "nav":{
+        "mobile":{
+            "sortIcon":"https://rukminim1.flixcart.com/www/50/50/promos/10/04/2019/d775ea02-5588-4cda-95ad-1ae03bb67e17.png?q=90",
+            "sortText":"Sort",
+            "filterIcon":"https://rukminim1.flixcart.com/www/50/50/promos/10/04/2019/62f36a1e-caf6-4433-a848-2adb7e164a4d.png?q=90",
+            "filterText":"Filter",
+            "shadowImage":"https://rukminim1.flixcart.com/www/30/10/promos/01/08/2018/e364d9fe-1225-4814-bfee-2c461bf1c442.png?q=90"
+        }
+    },
+    "main":{
+        "mobiles":[
+            {
+                "imgURL":"https://rukminim1.flixcart.com/image/200/250/l2f20sw0/mobile/h/c/6/10a-b09xb7hv7q-redmi-original-imagdrgp8pkbzccw.jpeg?q=90&crop=false",
+                "itemName":"REDMI 10A (Slate grey, 64 GB)",
+                "rating":4.8,
+                "ratedCustomers": "2,765",
+                "plusAssured":"https://rukminim1.flixcart.com/www/150/30/promos/07/06/2022/afa33081-fdc2-4dac-af42-7f99ff316372.png?q=90",
+                "prices":{
+                    "discount":"",
+                    "cost":8485
+                }
+            }
+        ]
+    }
+
+
+}

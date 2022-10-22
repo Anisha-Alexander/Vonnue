@@ -125,6 +125,8 @@ nav{
     justify-content: center;
     font-family:Roboto Medium,Roboto-Medium,Droid Sans,HelveticaNeue-Medium,Helvetica Neue Medium,sans-serif-medium;
 }
+
+/* nav-desk */
 .nav-elements-container-desk{
     display: none;
 }
