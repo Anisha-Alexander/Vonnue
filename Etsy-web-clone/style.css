@@ -1098,15 +1098,15 @@ footer a{
         font-size: 13px;
     }
 
-    .nav-li-el:hover a{
-        border-bottom: 1px solid rgba(34, 34, 34, 0.747);
+    .nav-li-el:hover{
+        border-bottom: 2px solid rgba(34, 34, 34, 0.747);
         /* transition: linear ease-out 0.7s; */
         
     }
     .nav-li-el a{
         text-decoration: none;
         color: #212121;
-        padding-bottom: 10px;
+        padding-bottom: 13px;
     }
     .nav-li-el:last-child a{
         display: flex;
@@ -1123,7 +1123,7 @@ footer a{
 
     /* bubble cards */
     .main-container{
-        margin-top: 110px;
+        margin-top: 107px;
     }
     .main-label-text{
         font-size: 32px;
@@ -1229,6 +1229,9 @@ footer a{
     
    .nav-header-container-mob{
         /* box-shadow:3px 3px 71px  rgb(34 34 34 / 12%); */
+   }
+   .main-container .main-label-text{
+    padding-top: 5px;
    }
 
 }
