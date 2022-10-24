@@ -7,7 +7,7 @@
 body{
     /* background-color: aqua; */
     line-height: 1.4;
-    font-family:  Roboto,Arial,sans-serif;
+    font-family:  'Roboto',Arial,sans-serif;
 }
 
 header{
@@ -144,4 +144,38 @@ nav{
 }
 .shadow-image-mob img{
     position: absolute;
+}
+#sort-window{
+    position: absolute;
+    background-color: yellow;
+    bottom: 0;
+    width: 100%;
+    height: 221px;
+    display: flex;
+    flex-direction: column;
+}
+#sort-window .sort-label{    
+    border-bottom: 1px solid #dddd;
+    
+}
+#sort-window .sort-label h2{
+    margin: 12px;
+    font-size: 14px;
+    color: #878787;
+    font-weight: lighter;
+}
+.sort-btn-img{
+    width: 16px;
+    height: 16px;
+}
+.sort-btn-img.display-none-sort{
+    display: none;
+}
+.sort-btn-img-click{
+    display: flex;
+    width: 16px;
+    height: 16px;
+}
+.sort-btn-img-click.display-blue-sort{
+    display: none;
 }

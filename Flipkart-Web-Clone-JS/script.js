@@ -131,4 +131,50 @@ const main= document.getElementById('main-el')
 
 
 
+// --------------------------SortBox-------------------------------------
+
+let sortWindow = document.getElementById('sort-window')
+
+    let sortLabel=document.createElement('div')
+    sortLabel.classList.add('sort-label')
+    sortLabel.innerHTML+= `<h2>${dataBase.sortLabel}</h2>`
+
+    let sortTypesCont=document.createElement('div')
+    sortTypesCont.classList.add('sort-type-container')
+        let sortTypearr=[]
+        sortTypearr=dataBase.sortType
+        let sortfunct=sortTypearr.forEach((item) => {
+                let sortTypesCard=document.createElement('div')
+                sortTypesCard.classList.add('sort-type-card')
+
+                sortTypesCard.innerHTML+=`<p>${item.value}</p><div class="sort-btn-img"><img src=${dataBase.sortBtnImg} loading="lazy" alt="" style="width: 100%; height: 100%; margin: auto; object-fit: contain; opacity: 1;"></div>
+                                                            <div class="sort-btn-img-click"><img src="${dataBase.sortBtnImgClick}" loading="lazy" alt="" style="width: 100%; height: 100%; margin: auto; object-fit: contain; opacity: 1;"></div>`
+                sortTypesCont.append(sortTypesCard)
+        
+                
+                
+        });
+        
+        
+        console.log(sortTypearr)
+        // let sortBtnImgArr=[]
+sortWindow.appendChild(sortLabel)
+sortWindow.appendChild(sortTypesCont)
+let sortBtnImgArr=document.querySelectorAll('.sort-btn-img')
+console.log(sortBtnImgArr)
+let sortBtnImgClickArr=document.querySelectorAll('.sort-btn-img-click')
+console.log(sortBtnImgClickArr)
+
+let sortBtnImgFunct=sortBtnImgArr.forEach((item,idx) =>{
+    item.addEventListener('click',() =>{
+        item.classList.add('display-none-sort')
+        
+    })
+})
+let sortBtnImgClickFunct=sortBtnImgClickArr.forEach((item) =>{
+    item.addEventListener('click',()=>{
+        item.classList.add('.display-blue-sort')
+    })
+    
+})
 
