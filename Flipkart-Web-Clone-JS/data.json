@@ -33,6 +33,7 @@
         }
     ],
     "main":{
+        "likeImg":"https://rukminim1.flixcart.com/www/50/50/promos/24/06/2021/e383eca4-a4f2-4dcb-824d-d5b27a35e22b.png?q=90",
         "mobiles":[
             {
                 "imgURL":"https://rukminim1.flixcart.com/image/200/250/l2f20sw0/mobile/h/c/6/10a-b09xb7hv7q-redmi-original-imagdrgp8pkbzccw.jpeg?q=90&crop=false",
@@ -42,11 +43,90 @@
                 "plusAssured":"https://rukminim1.flixcart.com/www/150/30/promos/07/06/2022/afa33081-fdc2-4dac-af42-7f99ff316372.png?q=90",
                 "prices":{
                     "discount":"",
-                    "cost":8485
+                    "cost":"8,485"
                 },
                 "delivery":"Free Delivery",
-                "date":2019
+                "date":20200225,
+                "sortPice":8485,
+                "sortPop":2765,
+                "offer":"Bank Offer",
+                "specificiations":[
+                    {"value":"4 GB RAM | 64GB Strorage"},
+                    {"value":"16.76 cm (6.66 inch) HD+ Display"},
+                    {"value":"5000mAh"},
+                    {"value":"13MP Rear Camera"}
+                ]
+                
+            },
+            {
+                "imgURL":"https://rukminim1.flixcart.com/image/200/250/l2f20sw0/mobile/y/x/f/10a-b09xb8gm9r-redmi-original-imagdrghswubhh2p.jpeg?q=90&crop=false",
+                "itemName":"REDMI 10A (Charcoal grey, 32 GB)",
+                "rating":4.4,
+                "ratedCustomers": "740",
+                "plusAssured":"https://rukminim1.flixcart.com/www/150/30/promos/07/06/2022/afa33081-fdc2-4dac-af42-7f99ff316372.png?q=90",
+                "prices":{
+                    "discount":"",
+                    "cost":"7,690"
+                },
+                "delivery":"Free Delivery",
+                "date":20221004,
+                "sortPice":7690,
+                "sortPop":740,
+                "offer":"Bank Offer",
+                "specificiations":[
+                    {"value":"2 GB RAM | 32GB Strorage"},
+                    {"value":"16.59 cm (6.53 inch) HD+ Display"},
+                    {"value":"5000mAh"},
+                    {"value":"13MP Rear Camera"},
+                    {"value":"5MP Front Camera"}
+                ]
+            },
+            {
+                "imgURL":"https://rukminim1.flixcart.com/image/200/250/ku5ufm80/mobile/s/i/q/sport-9a-redmi-original-imag7chxqqu7h5hs.jpeg?q=90&crop=false",
+                "itemName":"REDMI 9A (Coral Green, 32 GB)",
+                "rating":4.2,
+                "ratedCustomers": "5,202",
+                "plusAssured":"https://rukminim1.flixcart.com/www/150/30/promos/07/06/2022/afa33081-fdc2-4dac-af42-7f99ff316372.png?q=90",
+                "prices":{
+                    "discount":"",
+                    "cost":"7,988"
+                },
+                "delivery":"Free Delivery",
+                "date":20221002,
+                "sortPice":7988,
+                "sortPop":5202,
+                "offer":"Bank Offer",
+                "specificiations":[
+                    {"value":"2 GB RAM | 32GB Strorage"},
+                    {"value":"16.59 cm (6.53 inch) HD+ Display"},
+                    {"value":"5000mAh"},
+                    {"value":"13MP Rear Camera"},
+                    {"value":"5MP Front Camera"}
+                ]
+            },
+            {
+                "imgURL":"https://rukminim1.flixcart.com/image/200/250/l1pc3gw0/mobile/1/j/k/redmi-note-11-pro-plus-2201116si-mi-original-imagd7gszvwcsmgr.jpeg?q=90&crop=false",
+                "itemName":"REDMI NOTE 11 PRO Plus 5G(Phantom White, 128 GB)",
+                "rating":4.2,
+                "ratedCustomers": "3,570",
+                "plusAssured":"https://rukminim1.flixcart.com/www/150/30/promos/07/06/2022/afa33081-fdc2-4dac-af42-7f99ff316372.png?q=90",
+                "prices":{
+                    "discount":"",
+                    "cost":"19,999"
+                },
+                "delivery":"Free Delivery",
+                "date":20220925,
+                "sortPice":19999,
+                "sortPop":3570,
+                "offer":"Bank Offer",
+                "specificiations":[
+                    {"value":"8 GB RAM | 128GB Strorage"},
+                    {"value":"16.94 cm (6.67 inch) Display"},
+                    {"value":"5000mAh"},
+                    {"value":"108MP Rear Camera"}               
+                ]
             }
+            
         ]
     }
 
