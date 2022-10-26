@@ -115,7 +115,7 @@ const navEl= document.getElementById('nav-el')
 
 
 navEl.appendChild(navElementsContainerMob)
-//append nav  for des k!!-----------------
+//append nav  for desk!!-----------------
 navEl.appendChild(navShadowImageMob)
 
 
@@ -135,8 +135,9 @@ console.log(main)
 
     let cardsArr=dataBase.main.mobiles
     console.log(cardsArr)
-
-    let cardsFunct= cardsArr.forEach((item) =>{
+    
+    function cardsFunct(a){
+    a.forEach((item) =>{
         let mobileSpecContMob=document.createElement('div')
         mobileSpecContMob.classList.add('mobile-spec-container-mob')
             
@@ -249,7 +250,9 @@ console.log(main)
         mainContMob.appendChild(mobileSpecContMob)
 
     })
+}
 
+cardsFunct(cardsArr)
 
 main.appendChild(mainHeadDesk)
 main.appendChild(mainContMob)
@@ -292,27 +295,14 @@ sortWindowCont.appendChild(sortWindow)
         
         
         console.log(sortTypearr)
-        // let sortBtnImgArr=[]
 sortWindow.appendChild(sortLabel)
 sortWindow.appendChild(sortTypesCont)
-
-let sortBtnImgArr=document.querySelectorAll('.sort-btn-img')
-console.log(sortBtnImgArr)
-
-let sortBtnImgClickArr=document.querySelectorAll('.sort-btn-img-click')
-console.log(sortBtnImgClickArr)
-
-let sortBtnImgFunct=sortBtnImgArr.forEach((item,idx) =>{
-    item.addEventListener('click',() =>{
-        item.innerHTML=` <div class="sort-btn-img-click"><img src="${dataBase.sortBtnImgClick}" loading="lazy" alt="" style="width: 100%; height: 100%; margin: auto; object-fit: contain; opacity: 1;"></div>`
-        
-    })
-})
 
 // displaying sort window 
 
     sortCardMob.addEventListener('click',() =>{
         sortWindowCont.style.display='block';
+        sortWindow.classList.add('sort-transition')
         bodyEl.style.overflow='hidden';
     })
 
@@ -320,23 +310,116 @@ let sortBtnImgFunct=sortBtnImgArr.forEach((item,idx) =>{
 
     sortbackground.addEventListener('click',() =>{
         sortWindowCont.style.display='none';
+        sortWindow.classList.remove('sort-transition')
         bodyEl.style.overflow='visible';
     })
 
+
+    
 // sorting functions
-let cardsArrSort= cardsArr
-console.log(cardsArrSort)
-        // // sortin by popularity 
-        // const sortPop= cardsArrSort.sort((a,b)=>(a.sortPop > b.sortPop ? -1: 1));
-        // console.log(sortPop)
 
-        // // sorting by price high to low 
-        // const sortPriceHL= cardsArrSort.sort((a,b) =>(a.sortPice > b.sortprice ? 1: -1));
-        // console.log(sortPriceHL)
+    // sorting by popularity         
+    let popuplarityEl= document.querySelector('.sort-type-card:nth-child(1)')
+    console.log(popuplarityEl)
+    
+    popuplarityEl.addEventListener('click',()=>{
+        let sortBtnImg=document.querySelector('.sort-type-card:nth-child(1) .sort-btn-img')
+        console.log(sortBtnImg)  
+        sortBtnImg.innerHTML=`<img src="${dataBase.sortBtnImgClick}" loading="lazy" alt="" style="width: 100%; height: 100%; margin: auto; object-fit: contain; opacity: 1;">`
+        let sortBtnImgRest=document.querySelectorAll('.sort-type-card:nth-child(2) .sort-btn-img, .sort-type-card:nth-child(3) .sort-btn-img, .sort-type-card:nth-child(4) .sort-btn-img')
+        let a= sortBtnImgRest.forEach((item) =>{
+            item.innerHTML=`<img src=${dataBase.sortBtnImg} loading="lazy" alt="" style="width: 100%; height: 100%; margin: auto; object-fit: contain; opacity: 1;">`
+        })
+        sortWindowCont.style.display='none';
+        sortWindow.classList.remove('sort-transition')
+        bodyEl.style.overflow='visible';
+        let sortPoparr=0
+        function sortPop(){
+            mainContMob.innerHTML=``
+            sortPoparr=dataBase.main.mobiles
+            const sortPop= sortPoparr.sort((a,b)=>(a.sortPop > b.sortPop ? -1: 1));
+            console.log(sortPop)
+        }
+        sortPop()
+        cardsFunct(sortPoparr)
+    })
 
-        // // sorting by price low to high
-        // const sortPriceLH = cardsArrSort.sort((a,b)=>(a.sortPice < b.sortPice ? -1: 1));
-        // console.log(sortPriceLH)
 
-let sortfunctarr=document.querySelectorAll('.sort-type-card')
-console.log(sortfunctarr)
+    // sorting by price low to high
+    let lowToHighEl= document.querySelector('.sort-type-card:nth-child(2)')
+    console.log(lowToHighEl)
+    lowToHighEl.addEventListener('click',()=>{
+        let sortBtnImg=document.querySelector('.sort-type-card:nth-child(2) .sort-btn-img')
+        console.log(sortBtnImg)  
+        sortBtnImg.innerHTML=`<img src="${dataBase.sortBtnImgClick}" loading="lazy" alt="" style="width: 100%; height: 100%; margin: auto; object-fit: contain; opacity: 1;">`
+        let sortBtnImgRest=document.querySelectorAll('.sort-type-card:nth-child(1) .sort-btn-img, .sort-type-card:nth-child(3) .sort-btn-img, .sort-type-card:nth-child(4) .sort-btn-img')
+        let a= sortBtnImgRest.forEach((item) =>{
+            item.innerHTML=`<img src=${dataBase.sortBtnImg} loading="lazy" alt="" style="width: 100%; height: 100%; margin: auto; object-fit: contain; opacity: 1;">`
+        })
+        sortWindowCont.style.display='none';
+        sortWindow.classList.remove('sort-transition')
+        bodyEl.style.overflow='visible';
+        const sortLHarr= dataBase.main.mobiles
+        let sortPriceLH=0
+        function sortLH(){
+            mainContMob.innerHTML=``
+            sortPriceLH = sortLHarr.sort((a,b)=>(a.sortPice < b.sortPice ? -1: 1));
+            console.log(sortPriceLH)
+        }
+        sortLH()
+        cardsFunct(sortPriceLH)
+
+    })
+
+
+    // sorting by price high to low 
+    let highToLowEl= document.querySelector('.sort-type-card:nth-child(3)')
+    console.log(highToLowEl)
+    highToLowEl.addEventListener('click',() =>{
+        let sortBtnImg=document.querySelector('.sort-type-card:nth-child(3) .sort-btn-img')
+        console.log(sortBtnImg)  
+        sortBtnImg.innerHTML=`<img src="${dataBase.sortBtnImgClick}" loading="lazy" alt="" style="width: 100%; height: 100%; margin: auto; object-fit: contain; opacity: 1;">`
+        let sortBtnImgRest=document.querySelectorAll('.sort-type-card:nth-child(1) .sort-btn-img, .sort-type-card:nth-child(2) .sort-btn-img, .sort-type-card:nth-child(4) .sort-btn-img')
+        let a= sortBtnImgRest.forEach((item) =>{
+            item.innerHTML=`<img src=${dataBase.sortBtnImg} loading="lazy" alt="" style="width: 100%; height: 100%; margin: auto; object-fit: contain; opacity: 1;">`
+        })
+        sortWindowCont.style.display='none';
+        sortWindow.classList.remove('sort-transition')
+        bodyEl.style.overflow='visible';
+        let sortHLarr=dataBase.main.mobiles
+        let sortPriceHL=0
+        function sortHL(a){
+            mainContMob.innerHTML=``
+            sortPriceHL= sortHLarr.sort((a,b) =>(a.sortPice < b.sortPice ? 1: -1));
+            console.log(sortHLarr);       
+        }
+        sortHL()
+        cardsFunct(sortPriceHL)
+    })
+
+
+    //sorting  the newest  by date
+    let newestEl = document.querySelector('.sort-type-card:nth-child(4)')  
+    console.log(newestEl)
+    newestEl.addEventListener('click',()=>{
+        let sortBtnImg=document.querySelector('.sort-type-card:nth-child(4) .sort-btn-img')
+        console.log(sortBtnImg)  
+        sortBtnImg.innerHTML=`<img src="${dataBase.sortBtnImgClick}" loading="lazy" alt="" style="width: 100%; height: 100%; margin: auto; object-fit: contain; opacity: 1;">`
+        let sortBtnImgRest=document.querySelectorAll('.sort-type-card:nth-child(1) .sort-btn-img, .sort-type-card:nth-child(2) .sort-btn-img, .sort-type-card:nth-child(3) .sort-btn-img')
+        let a= sortBtnImgRest.forEach((item) =>{
+            item.innerHTML=`<img src=${dataBase.sortBtnImg} loading="lazy" alt="" style="width: 100%; height: 100%; margin: auto; object-fit: contain; opacity: 1;">`
+        })
+        sortWindowCont.style.display='none';
+        sortWindow.classList.remove('sort-transition')
+        bodyEl.style.overflow='visible';
+        const sortDatearr= dataBase.main.mobiles
+        let sortDate=0
+        function sortDateF(){
+            mainContMob.innerHTML= ``
+            sortDate =sortDatearr.sort((a,b) =>(a.date < b.date ? 1: -1));
+            console.log(sortDate)
+        }
+        sortDateF()
+        cardsFunct(sortDate)
+    })
+    

@@ -125,6 +125,51 @@
                     {"value":"5000mAh"},
                     {"value":"108MP Rear Camera"}               
                 ]
+            },
+            {
+                "imgURL":"https://rukminim1.flixcart.com/image/200/250/ku5ufm80/mobile/8/b/1/sport-9a-redmi-original-imag7chjvhxdhhyh.jpeg?q=90&crop=false",
+                "itemName":"REDMI 9A (Carbon Black, 32 GB)",
+                "rating":4.4,
+                "ratedCustomers": "5,452",
+                "plusAssured":"https://rukminim1.flixcart.com/www/150/30/promos/07/06/2022/afa33081-fdc2-4dac-af42-7f99ff316372.png?q=90",
+                "prices":{
+                    "discount":"",
+                    "cost":"7,735"
+                },
+                "delivery":"Free Delivery",
+                "date":20221002,
+                "sortPice":7735,
+                "sortPop":5452,
+                "offer":"Bank Offer",
+                "specificiations":[
+                    {"value":"2 GB RAM | 32GB Strorage"},
+                    {"value":"16.59 cm (6.53 inch) HD+ Display"},
+                    {"value":"5000mAh"},
+                    {"value":"13MP Rear Camera"},
+                    {"value":"5MP Front Camera"}
+                ]
+            },
+            {
+                "imgURL":"https://rukminim1.flixcart.com/image/200/250/kzfvzww0/mobile/t/f/s/note-11-2201117ti-redmi-original-imagbgaqje2mygjm.jpeg?q=90&crop=false",
+                "itemName":"REDMI NOTE 11(Starbust White, 128 GB)",
+                "rating":4.4,
+                "ratedCustomers": "6,898",
+                "plusAssured":"https://rukminim1.flixcart.com/www/150/30/promos/07/06/2022/afa33081-fdc2-4dac-af42-7f99ff316372.png?q=90",
+                "prices":{
+                    "discount":"",
+                    "cost":"15,766"
+                },
+                "delivery":"Free Delivery",
+                "date":20221002,
+                "sortPice":15766,
+                "sortPop":6898,
+                "offer":"Bank Offer",
+                "specificiations":[
+                    {"value":"6 GB RAM | 64GB Strorage"},
+                    {"value":"16.33 cm (6.43 inch) Display"},
+                    {"value":"5000mAh"},
+                    {"value":"50MP Rear Camera"}                
+                ]
             }
             
         ]

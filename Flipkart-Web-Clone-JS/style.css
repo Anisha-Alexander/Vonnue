@@ -12,7 +12,6 @@ body{
 
 header{
     display: flex;
-    position: fixed;
     background-color: #2874f0;
     /* width: 100vw; */
     height: 52px;
@@ -99,12 +98,13 @@ header{
 
 /* nav mobile */
 nav{
-    position: fixed;
+    position: sticky;
     z-index: 100;
     background-color: white;
     width: 100%;
-    top: 52px;
+    top: 0;
 }
+
 .nav-elements-container-mob{
     height: 48px;
     display: flex;
@@ -153,10 +153,12 @@ nav{
     position: fixed;
     z-index: 1000;
     opacity: 2;
-    display: none;
     flex-direction: column;
     bottom: 0;
+    display: none;
+    
 }
+
 #block{
     background-color:#04040678;
     width: 100%;
@@ -170,6 +172,14 @@ nav{
     height: 221px;
     display: flex;
     flex-direction: column;
+    transform: translateY(-5vh);
+    transition: transform 0.4s ease-in;
+    opacity: 0;
+}
+#sort-window.sort-transition{
+    transform: translateY(0vh);
+    transition: transform 0.4s ease-in;
+    opacity: 1;
 }
 #sort-window .sort-label{    
     border-bottom: 1px solid #dddd;
@@ -207,14 +217,14 @@ nav{
     margin-top: 2px;
     margin-right: 8px;
 }
-.sort-type-card:nth-child(2){
-    background-color: yellow;
-}
+
+
+
 /* sort window end------------------ */
 
 /* main */
 main{
-    padding-top: 104px;
+    /* padding-top: 104px; */
 }
 
 .main-container-mob{
@@ -291,11 +301,9 @@ main{
     font-family: Roboto, Arial, Helvetica, sans-serif;
     line-height: normal;
     width: 163px;
-    height: 32px;
+    /* height: 32px; */
 }
-.mobile-spec-container-mob:nth-child(4) .item-name p{
-   height: 52px;
-}
+
 .rating-container{
     display: flex; 
     align-items: center;   

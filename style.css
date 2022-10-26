@@ -35,6 +35,7 @@ main{
     padding: 100px 100px; 
     border-radius: 50px;
     height: 500px;
+    position: relative;
     
 }
 main:hover{
@@ -67,4 +68,31 @@ a{
 .anchor-element-card:hover a{
     background-color: cadetblue; 
     color: white;  
+}
+
+.git-hub{
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    
+}
+.git-hub p{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+.git-hub a{
+    border: none;
+    font-size: 42px;
+    color: white;
+    background-color: black;
+    padding: 20px 60px;
+    box-shadow: none;
+    
+}
+.git-hub a:hover{
+    box-shadow:0px 3px 22px 5px white;
+    border: 1px solid white;
+    
 }
