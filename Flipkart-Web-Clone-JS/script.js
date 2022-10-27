@@ -423,3 +423,14 @@ sortWindow.appendChild(sortTypesCont)
         cardsFunct(sortDate)
     })
     
+// filter data funct
+
+let filterarr= dataBase.main.mobiles
+
+const filter=filterarr.filter(function(item){
+    return item.sortPice <10000 && item.sortPice>7000})
+console.log(filter)
+
+
+
+
