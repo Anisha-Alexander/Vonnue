@@ -1,11 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
-import MyApp from './MyApp';
+import Increment from './components/Increment';
 
 function App() {
   return (
     <div className="App">
-     <MyApp/>
+     <Increment/>
     </div>
   );
 }
