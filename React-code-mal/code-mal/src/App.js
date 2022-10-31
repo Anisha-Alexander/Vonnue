@@ -1,9 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
+<<<<<<< HEAD
+=======
+import Increment from './components/Increment';
+>>>>>>> main
 
 function App() {
   return (
     <div className="App">
+<<<<<<< HEAD
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -18,8 +23,15 @@ function App() {
           Learn React
         </a>
       </header>
+=======
+     <Increment/>
+>>>>>>> main
     </div>
   );
 }
 
+<<<<<<< HEAD
 export default App;
+=======
+export default App;
+>>>>>>> main
