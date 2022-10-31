@@ -5,7 +5,7 @@ import './myStyle.css'
 function StyleSheet(props) {
     let className = props.primary ? 'primary' :''
   return (
-    <div class={`${className} font-xl`}>StyleSheet</div>
+    <div className={`${className} font-xl`}>StyleSheet</div>
   )
 }
 
