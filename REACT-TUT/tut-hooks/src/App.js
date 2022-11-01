@@ -9,6 +9,7 @@ import IntervalHookCounter from './components/IntervalHookCounter';
 import MouseContainer from './components/MouseContainer';
 import ThreeHookCounter from './components/ThreeHookCounter';
 import TwoHookCounter from './components/TwoHookCounter';
+import UseEffects from './components/UseEffects';
 
 function App() {
   return (
@@ -21,8 +22,9 @@ function App() {
       {/* <EffectsCounter/> */}
       {/* <HookMouse/> */}
       {/* <MouseContainer/> */}
-      {/* <IntervalHookCounter/> */}
-      <DataFetching/>
+      <IntervalHookCounter/>
+      {/* <DataFetching/> */}
+      {/* <UseEffects/> */}
     </div>
   );
 }
