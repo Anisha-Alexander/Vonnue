@@ -30,4 +30,8 @@ Documentaries: 'https://api.themoviedb.org/3/discover/movie?api_key=${API_KEY_HE
 
 ////////////////////////////////////////////////////////////////////API KEY////////////////////////////////////////////////////////////////////////////
 
-API_KEY = "YOUR API KEY"
+
+///my assets///
+API_KEY = "81941ba5b12cf75e3e5fae7ac5c5adad"
+
+imgurl: https://image.tmdb.org/t/p/w500/
