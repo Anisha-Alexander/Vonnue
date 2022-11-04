@@ -676,9 +676,8 @@ footer li:hover{
         
         width: max-content;
         /* overflow: hidden; */
-        margin-right: 0px;
+        margin: 96px auto 0;
         display: flex;
-        margin-top: 96px;
         /* background-color: #494949; */
     }
     .section-one{
@@ -742,5 +741,11 @@ footer li:hover{
 @media screen and (min-width:1400px){
     .img-text-card:nth-child(1){
         left: 3%;
+    }
+}
+
+@media screen and (min-width:1600px){
+    .img-text-card:nth-child(1){
+        left:15%;
     }
 }
