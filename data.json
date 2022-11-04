@@ -1,0 +1,28 @@
+{
+    "website":[
+        {
+            "url":"Azure-web-clone/index.html",
+            "name":"Azure"
+        },
+        {
+            "url":"Doordash-web-clone/index.html",
+            "name":"DOORDASH"
+        },
+        {
+            "url":"Airbnb-web-clone/index.html",
+            "name":"AIRBNB"
+        },
+        {
+            "url":"Flipkart-web-clone/index.html",
+            "name":"FLIPKART"
+        },
+        {
+            "url":"Etsy-web-clone/index.html",
+            "name":"ETSY"
+        },
+        {
+            "url":"Flipkart-Web-Clone-JS/index.html",
+            "name":"FLIPKART-JS"
+        }
+    ]
+}

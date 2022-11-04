@@ -19,7 +19,7 @@ header{
     margin-top: 50px;
     gap: 20px;
     color: black;
-    background-color: white;
+    /* background-color: white; */
     padding: 5px 20px;
     border-radius: 5px;
 }
@@ -39,8 +39,9 @@ main{
     
 }
 main:hover{
-    border: 2px solid white;
-    box-shadow: 10px white;
+    border: 1px solid white;
+    /* box-shadow: 10px white; */
+    transform: all ease-in-out 0.2s;
 }
 .anchor-element-card{
     border-radius: 4px;
@@ -62,19 +63,20 @@ a{
     box-shadow:  5px 10px #888888;
 }
 .anchor-element-card:hover{
-    background-color: white;
+    background-color: black;
     color: black;
 }
 .anchor-element-card:hover a{
     background-color: cadetblue; 
     color: white;  
+    box-shadow: none;
 }
 
 .git-hub{
     width: 100%;
     position: absolute;
     bottom: 10px;
-    right: 10px;
+    right: 0px;
     
 }
 .git-hub p{
@@ -87,12 +89,18 @@ a{
     font-size: 42px;
     color: white;
     background-color: black;
-    padding: 20px 60px;
+    padding: 15px 30px;
     box-shadow: none;
+    border-top-left-radius: 50% ;
+    border-bottom-right-radius: 50% ;
+    border: 1px solid white;
+    transform: scale(0.7);
     
 }
 .git-hub a:hover{
-    box-shadow:0px 3px 22px 5px white;
+    box-shadow:0px 3px 20px 5px white;
     border: 1px solid white;
+    transform: scale(0.8);
+    transition:all ease-in-out 0.2s;
     
 }
