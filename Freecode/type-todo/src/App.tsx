@@ -16,6 +16,10 @@ let role:[number, string]
 //   name:string
 //   age:number
 // }
+interface person{
+  name:string
+  age:number
+}
 // let person: Person = {
 //   name:"Piyush",
 //   age:22
