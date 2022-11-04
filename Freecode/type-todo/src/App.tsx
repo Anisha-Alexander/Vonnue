@@ -1,40 +1,31 @@
-import React from 'react';
+import React,{useState,useEffect} from 'react';
 import './App.css';
+import InputField from './components/InputField';
+import { ToDo } from './components/Model';
+import ToDoList from './components/ToDoList';
 
 
-let name: string
-name ="Piyush"
-let age:number | string
-age= 'tweety'
-age=4
-let isStudent:boolean
-let hobbies: string[]
-let role:[number, string]
-// hobbies=['helo','hellli']
-
-// type Person={
-//   name:string
-//   age:number
-// }
-interface person{
-  name:string
-  age:number
-}
-// let person: Person = {
-//   name:"Piyush",
-//   age:22
-// }
-// let per: Person ={
-//   name:"honey",
-//   age:21
-// }
-// let lotsOfPeople :Person[]
-
-
-function App() {
-  return (
-    <div className="App">
      
+const App : React.FC= () => {
+  const [todo, setTodo] = useState<string>("")
+  const [todos, setTodos] = useState<ToDo[]>([])
+
+  const handleAdd = (e:React.FormEvent) =>{
+    e.preventDefault();
+    if(todo){
+      setTodos([...todos,{id:Date.now(),todo:todo,isDone:false}])
+      setTodo("")
+    }
+  }
+  console.log(todos) 
+  return (
+    <div className="App"> 
+      <span className='heading'>Taskify</span>
+      <InputField todo={todo} setTodo={setTodo} handleAdd={handleAdd}/>
+      <ToDoList todos={todos} setTodos={setTodos}/>
+      {/* {todos.map((t)=>(
+        <li>{t.todo}</li>
+      ))} */}
     </div>
   );
 }
