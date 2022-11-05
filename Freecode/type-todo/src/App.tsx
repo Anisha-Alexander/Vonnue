@@ -6,7 +6,7 @@ import ToDoList from './components/ToDoList';
 
 
      
-const App : React.FC= () => {
+const App : React.FC = () => {
   const [todo, setTodo] = useState<string>("")
   const [todos, setTodos] = useState<ToDo[]>([])
 
