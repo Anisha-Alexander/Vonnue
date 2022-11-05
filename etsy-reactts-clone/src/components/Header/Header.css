@@ -1,0 +1,170 @@
+.nav-container{
+    display: flex;
+    flex-direction: column;
+    padding: 6px 0px 4px 12px;
+}
+.nav-header-container-mob{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 48px;
+}
+.nav-title svg{
+    fill:#f1641e;
+    width: 60px;
+    height: 30px;
+}
+.search-input-container-tab{
+    /* display: none; */
+}
+.nav-header-left-card{
+    display: flex;
+    font-size: 14px;
+    list-style-type: none; 
+    font-family: -apple-system,BlinkMacSystemFont,"Roboto","Droid Sans","Segoe UI","Helvetica",Arial,sans-serif;       
+}
+.nav-header-left-card li{
+    height: 48px;
+    padding: 9px;
+    display: flex;
+    align-items: center;
+}
+.user-icon-tab{
+    /* display: none; */
+}
+#signin-btn{
+    padding: 0;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    
+}
+.nav-header-left-card li button{
+    /* border: none; */
+    padding: 9px 15px;
+    margin-right: 6px;
+    border: none;
+}
+
+.nav-header-left-card .left-header-icon svg{
+    width: 24px;
+    height: 24px;
+    
+}
+
+/* nav bar with search container mobile */
+.nav-main-container-desk{
+    display: none;
+}
+.nav-main-container-mob{
+    display: flex;
+    height: 60px;
+    align-items: flex-start;
+}
+.nav-main-container-mob button#hamburger-btn {
+    padding: 12px;
+    padding-left: 0px;
+    border: none; 
+}
+.nav-main-container-mob button#hamburger-btn svg{
+    width: 24px;
+    height: 24px;       
+
+}
+.search-input-container{
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    border: 2px solid #222;
+    border-radius: 96px;
+    box-shadow: 1px 2px 4px 0 rgb(34 34 34 / 10%) inset;
+    max-height: 48px;
+    background-color: rgba(34, 34, 34, 0.05);
+    height: 44px;
+}
+.search-box{
+    padding: 9px 0px 9px 12px;
+    /* height: 44px; */
+    font-size: 16px;
+    width: 100%;
+    border: none;
+    background-color: transparent;
+}
+.search-icon{
+    border: none;
+    padding:5px 21px 5px 15px;
+
+}
+
+.search-icon svg{
+    width: 24px;;
+    height: 24px;
+}
+
+/*     */
+
+
+/* 
+
+nav{
+        max-width: 1400px;
+        margin: auto;
+        
+    }
+    .nav-main-container-mob{
+        display: none;
+    }
+    .nav-header-container-mob{
+        max-width: 1328px;        
+        padding: 0px 12px;
+        height: 100%;
+        margin: auto;
+        width: 100%;
+        
+    }
+    .nav-container{
+        height: 58px;
+        justify-content: center;
+        position: fixed;
+        margin: auto;
+        width:100%;
+        background-color: white;
+        z-index:100;
+        top: 0;
+        
+    }
+    
+    .search-input-container-tab{
+        display: flex;
+        width: 100%;
+        margin-left: 6px;
+        height: 44px;
+    }
+    .search-box:focus{
+        outline: none;
+    }
+    click function
+    .search-icon.background{
+        background-color:#222222;
+        fill: white;
+    }
+    .search-box.background{
+        background-color: white;
+    }
+    .search-input-container-tab #search-icon{
+        padding: 7px 15px 11px 15px;
+    }
+    .nav-title svg{
+        width: 80px;
+        height: 40px;
+    }
+
+    .nav-title {
+        padding-top:10px;
+    }
+    .user-icon-tab{
+        display: inline;
+    }
+    .nav-header-left-card .tab-none{
+        display: none;
+    } */

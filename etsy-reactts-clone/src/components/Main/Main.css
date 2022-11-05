@@ -1,0 +1,85 @@
+.main-container{
+    display: flex;
+    flex-direction: column;
+    background-color: #d7e6f5;
+    height: 296.5px;
+    position: relative;
+}
+.main-label-text{
+    font-size: 20px;
+    color: #212121;
+    font-weight: 300;
+    text-align: center;
+    font-family: "Guardian-EgypTT",Charter,"Charter Bitstream",Cambria,"Noto Serif Light","Droid Serif",Georgia,serif;
+    
+    padding: 18px 12px 0;
+    letter-spacing: 0.35;
+    line-height: 32px;
+}
+
+
+
+/* main bubble cards */
+.cards-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    /* background-color: yellow; */
+    top: 31%;
+    position: absolute;
+    width: 100%;
+
+}
+.img-title-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 140px;
+}
+.img-title-container p{
+    width:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+    position: relative;
+    white-space: nowrap;
+    
+}
+main .card-img img{
+    max-width:87.28px;
+    border-radius: 50%;
+}
+main .card-img{
+    width: fit-content;
+    height: fit-content;
+    /* background-color: teal;     */
+}
+main .card-img-title{
+    font-family: "Graphik Webfont",-apple-system,"Helvetica Neue","Droid Sans",Arial,sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.1px;
+    line-height: 18px;
+}
+
+/* hover for main bubbles */
+
+.img-title-container:hover .card-img{
+    transform: scale(1.1);
+    /* box-shadow: rgb(34 34 34 / 10%); */
+   
+}
+.img-title-container:hover .card-img img{
+    border: 1px solid rgba(34, 34, 34, 0.25);
+}
+
+div.img-title-container:hover  p{
+    color:rgba(34, 34, 34, 0.747);
+    transition: all ease-in-out .2s;
+    /* position: absolute;
+    top: 70%; */
+    width: 100%;
+    border-bottom: 2px solid rgba(34, 34, 34, 0.747);
+}
