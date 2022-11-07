@@ -1,0 +1,60 @@
+/* section main with cards */
+
+.section-main{
+    margin-top: 100px;
+    /* background-color: teal; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 6px;
+}
+.section-main-label a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #212121;
+    font-family: "Graphik Webfont",-apple-system,"Helvetica Neue","Droid Sans",Arial,sans-serif;
+    padding-bottom: 18px;
+}
+.section-main-label a {
+    font-size: 13px;
+    margin-left: 8px;
+    /* padding-top: px; */
+    font-weight: 100;
+}
+.section-main-img-cards-cont{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.section-main-img-cards-cont .section-main-img-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    margin: 6px;
+    border-radius: 20px;
+    border: 1px solid  rgba(34, 34, 34, 0.15);
+    text-decoration: none;
+}
+.section-main-img-cards-cont .section-main-img-box{
+    border-radius: inherit;
+    width: 100%;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.section-main-img-cards-cont .section-main-img-card .section-main-img-box img{
+    width: 100%;
+    border-radius: inherit;
+}
+.section-main-text-box{
+    padding: 12px;
+}
+.section-main-text-box p{
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "Graphik Webfont",-apple-system,"Helvetica Neue","Droid Sans",Arial,sans-serif;
+    text-align: center;
+    line-height: 20px;
+    color: #222222;
+    
+}

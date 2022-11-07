@@ -202,35 +202,37 @@
         },
            "aside":{
             "label":"Editor's Picks",
-            "title":"The Diwali Shop",
+            "title":"The Wedding Shop",
+            "more":"See more",
             "text":"Shop these unique finds",
             "imgs":[
                 {
-                    "backURL":"https://v-cg.etsystatic.com/video/upload/ac_none,du_15,q_auto:good/VID_20220831_083646_wtc2x8.mp4",
-                    "cost":"2,147"
+                    "backURL":"https://v-cg.etsystatic.com/video/upload/ac_none,du_15,q_auto:good/3551_Kundan_Small_Drop_Earrings_Indian_Wedding_Jewelry_VDO_huv9pm.mp4",
+                    "cost":"3,061"
                 },
                 {
-                    "backURL":"https://v-cg.etsystatic.com/video/upload/ac_none,du_15,q_auto:good/ezgif.com-gif-maker_1_j8wyq2.mp4",
-                    "cost":"1,885"
+                    "backURL":"https://i.etsystatic.com/22038449/c/842/669/0/550/il/d916a5/4102941930/il_680x540.4102941930_8srm.jpg",
+                    "cost":"2,964"
                 },
                 {
-                    "backURL":"https://v-cg.etsystatic.com/video/upload/ac_none,du_15,q_auto:good/VID_20220827_094115_wcqask.mp4",
-                    "cost":"859"
+                    "backURL":"https://i.etsystatic.com/17600118/c/906/720/0/181/il/791dcb/2344847852/il_680x540.2344847852_gqso.jpg",
+                    "cost":"4,082"
                 },
                 {
-                    "backURL":"https://i.etsystatic.com/16676438/c/1954/1552/0/114/il/2054a3/1825350041/il_680x540.1825350041_rvfe.jpg",
-                    "cost":"2,663"
+                    "backURL":"https://i.etsystatic.com/30973456/c/1748/1389/366/874/il/8b5e6f/3842506979/il_680x540.3842506979_6clt.jpg",
+                    "cost":"7,313"
                 },                
                 {
-                    "backURL":"https://v-cg.etsystatic.com/video/upload/ac_none,du_15,q_auto:good/VID_20220815_165013_b8nou4.mp4",
-                    "cost":"2,336"
+                    "backURL":"https://i.etsystatic.com/38029268/r/il/5be815/4267850643/il_680x540.4267850643_ot1o.jpg",
+                    "cost":"7,526"
                 },
                 {
-                    "backURL":"https://i.etsystatic.com/17612918/c/1945/1546/490/332/il/821bd7/3550189568/il_680x540.3550189568_n5cq.jpg",
-                    "cost":"2,147"
+                    "backURL":"https://v-cg.etsystatic.com/video/upload/ac_none,du_15,q_auto:good/20200705_171318_1_hnmxkc.mp4",
+                    "cost":"8,419"
                 }
             ],
             "para":"Make your celebrations even more special this year with beautiful items from local sellers"
-        }
+        },
+        "likeBtn":"M12,21C10.349,21,2,14.688,2,9,2,5.579,4.364,3,7.5,3A6.912,6.912,0,0,1,12,5.051,6.953,6.953,0,0,1,16.5,3C19.636,3,22,5.579,22,9,22,14.688,13.651,21,12,21ZM7.5,5C5.472,5,4,6.683,4,9c0,4.108,6.432,9.325,8,10,1.564-.657,8-5.832,8-10,0-2.317-1.472-4-3.5-4-1.979,0-3.7,2.105-3.721,2.127L11.991,8.1,11.216,7.12C11.186,7.083,9.5,5,7.5,5Z"
     }
     

@@ -8,6 +8,7 @@
     justify-content: space-between;
     align-items: center;
     height: 48px;
+   
 }
 .nav-title svg{
     fill:#f1641e;
@@ -86,6 +87,9 @@
     width: 100%;
     border: none;
     background-color: transparent;
+}
+.search-box:focus{
+    outline: none;
 }
 .search-icon{
     border: none;

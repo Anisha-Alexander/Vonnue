@@ -1,0 +1,59 @@
+.article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 60px 0;
+    padding: 12px;
+}
+.article-label-card{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 13px;
+}
+.article-label-card h3{
+    font-size: 18px;
+}
+.article-img-cards-cont{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    padding: 12px;
+}
+.article .section-main-img-card{
+    display: flex;
+    width: 100%;
+    border: 1px solid  rgba(34, 34, 34, 0.15);
+    margin: 6px 0;
+    border-radius: 12px;
+    background-color: white;
+}
+.article .section-main-img-card .section-main-img-box{
+    width: 50%;
+    border-radius: inherit;
+}
+.article .section-main-img-card .section-main-img-box img{
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    object-fit: cover;
+
+}
+.article .section-main-img-card .text-box{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:  0px 18px 6px;
+}
+.article .section-main-img-card .text-box span{
+    padding-top:18px;
+}
+.article .section-main-img-card .text-box h3{
+    padding: 12px 0;
+}
+.article .section-main-img-card .text-box .card-para{
+    display: none;
+}
