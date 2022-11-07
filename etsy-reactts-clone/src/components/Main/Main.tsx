@@ -9,7 +9,7 @@ const cardsArr = data.cardsLabelContainerMainHead.cards
 console.log(cardsArr)
 
 
-function Main () {
+const Main:React.FC =()=> {
     return (
         <main className='main-container' id='main-container'>
             <h1 className='main-label-text'>{data.cardsLabelContainerMainHead.labelText}</h1>
