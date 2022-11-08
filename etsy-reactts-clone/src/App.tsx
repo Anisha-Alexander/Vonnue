@@ -7,6 +7,7 @@ import Main from './components/Main/Main';
 import Section from './components/Section/Section';
 import Aside from './components/Aside/Aside';
 import Article from './components/Article/Article';
+import Footer from './components/Footer/Footer';
 
 
 // export interface AppData {
@@ -21,6 +22,7 @@ const App : React.FC = () => {
       <Aside/>
       <Section/>
       <Article/>      
+      <Footer/>
     </div>
     
     );

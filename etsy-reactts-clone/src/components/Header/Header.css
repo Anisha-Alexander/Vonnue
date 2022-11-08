@@ -27,9 +27,6 @@
     display: flex;
     align-items: center;
 }
-.user-icon-tab{
-    /* display: none; */
-}
 #signin-btn{
     padding: 0;
     display: flex;
