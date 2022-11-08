@@ -86,9 +86,7 @@ footer a{
     font-size: 16px;
     font-weight: bold;
 }
-.foot-main-container{
 
-}
 .footer-main-head-box{
     background-color: rgba(252, 200, 209, 0.493) ;
     display: flex;
@@ -175,8 +173,10 @@ footer a{
     padding: 0 18px;
     list-style-type: none;
 }
-.element-list-items.display-list{
+.element-list-items{
     display: flex;
+    flex-direction: column
+
 }
 .element-list-items li{
     padding: 6px 6px 12px;

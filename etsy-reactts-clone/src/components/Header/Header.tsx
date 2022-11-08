@@ -1,11 +1,7 @@
-import { title } from 'process'
 import React, { useState, useEffect } from 'react'
 import data from '../data.json'
 import "./Header.css"
 
-// export interface HeaderProps {
-//   signTxt: string;
-// }
 
 const Header = () => {
   const [isfocus, setIsfocus] = useState<boolean>(false)

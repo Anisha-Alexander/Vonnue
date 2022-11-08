@@ -198,7 +198,15 @@
                     ]
                 }
             ],  
-            "coprightCard":"&#169; 2022 Etsy, Inc."
+            "Download-text":"Download the Etsy App",
+            "coprightCard":" 2022 Etsy, Inc.",
+            "Terms":[
+                {"value":"Terms of use"},
+                {"value":"Privacy"},
+                {"value":"Interest-based ads"},
+                {"value":"Regions"}
+            ]
+
         },
            "aside":{
             "label":"Editor's Picks",
