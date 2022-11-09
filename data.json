@@ -23,6 +23,22 @@
         {
             "url":"Flipkart-Web-Clone-JS/index.html",
             "name":"FLIPKART-JS"
+        },
+        {
+            "url":"REACT-PROJECT-BROTOTYPE/netflix-app/public/index.html",
+            "name":"Netflix-TS"
+        },
+        {
+            "url":"etsy-reactts-clone/public/index.html",
+            "name":"ETSY-TS"
+        },
+        {
+            "url":"-PROJECT-BROTOTYPE/to-do-app/public/index.html",
+            "name":"TO-DO-JS"
+        },
+        {
+            "url":"Freecode/type-todo/public/index.html",
+            "name":"TO-DO-TS"
         }
     ]
 }
