@@ -1,9 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Rubik+Glitch&display=swap');
 *{
     margin: 0;
     padding: 0;
 }
 body {
     background-color: rgb(0, 0, 0);
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Rubik Glitch', cursive;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -26,6 +30,9 @@ header{
 header h2{
     font-family: sans-serif;
 }
+header img{
+    width: 800px;
+}
 
 main{
     display: flex;
@@ -47,37 +54,84 @@ main:hover{
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    margin: auto;
 }
 .anchor-element-card{
     border-radius: 4px;
     text-align: center;
     padding: 20px 20px;
     background-image: linear-gradient(to bottom right, rgb(47, 101, 110), rgb(255, 255, 255));
-    width: 250px;
-    height: 300px;
+    width: 300px;
+    height: 350px;
     border: 1px solid transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    position:relative;
+    overflow: hidden;
 
 }
-
-.anchor-element-card a{
+.anchor-element-card .title{
     text-decoration: none;
-    color: cadetblue;
+    color:silver;
     font-size: 30px;
-    width: 10px;
-    color: rgb(0, 0, 0);
     text-transform: uppercase;
+    white-space: nowrap;
+    background-image: linear-gradient(to bottom right, rgb(47, 101, 110), rgb(0, 0, 0));
+    padding: 10px 20px;
+    border: 1px solid silver;
+    width:300px;
 }
 .anchor-element-card:hover{
     background-color: black;
     color: black;
     border-color:white;
 }
-.anchor-element-card:hover a{
+.anchor-element-card:hover .title{
     /* background-color: cadetblue;  */
     color: white;  
     box-shadow: none;
+    border: 1px solid white;
 }
-
+.image-container{
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+}
+.image-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+}
+.demo-box{
+    position: absolute;
+    width: 200px;
+    background-image: linear-gradient(to bottom right, rgb(47, 101, 110), rgb(0, 0, 0));
+    border-radius: 20px;
+    z-index: 1;
+    bottom: 5px;
+    
+}
+.demo-box a{
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color:rgb(0, 237, 245);
+    font-family: 'Muli';
+    font-size: 20px;
+    
+}
+.demo-box:hover {
+    box-shadow: 2px 2px 25px #17544f;
+}
+.demo-box:hover a{
+   color: white;  
+}
 .git-hub{
     width: 100%;
     position: absolute;
@@ -102,10 +156,14 @@ main:hover{
     border: 1px solid white;
     transform: scale(0.7);
     text-decoration: none;
+    font-family: 'Muli';
+    font-weight: 700;
+    width: 300px;
+    text-align: center;
     
 }
 .git-hub a:hover{
-    box-shadow:0px 3px 20px 5px white;
+    box-shadow:0px 3px 20px silver;
     border: 1px solid white;
     transform: scale(0.8);
     transition:all ease-in-out 0.2s;
