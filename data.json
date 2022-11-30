@@ -90,8 +90,10 @@
         {
             "url":"Udemy-50-projects/project-14-random-choice/index.html",
             "name":"Random Choice"
+        },
+        {
+            "url":"Udemy-50-projects/project-15-incrementing-counter/index.html",
+            "name":"Increment Counter"   
         }
-        
-
     ]
 }
