@@ -100,8 +100,12 @@
             "name":"Drinkin Water"   
         },
         {
-            "url":"Udemy-50-projects/project-16-drinkin-water/index.html",
-            "name":"Drinkin Water"   
+            "url":"Udemy-50-projects/project-20-btn-ripple-effect/index.html",
+            "name":"Button Ripple Effect"   
+        },
+        {
+            "url":"Udemy-50-projects/project-23-kinetic-css-loader/index.html",
+            "name":"Kinetic CSS Loader"
         }
     ]
 }
