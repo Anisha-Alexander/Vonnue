@@ -385,9 +385,7 @@ header{
     padding: 0 12px 0 8px;    
 
 }
-.search-icon svg{
-    
-}
+
 .login-container{
     background-color: white;
     /* height: 31px; */
@@ -444,7 +442,6 @@ nav{
     padding-top: 4px;
 
 }
-
 .shadow-image-mob{
     display: none;
 }
@@ -919,9 +916,7 @@ li::marker{
     /* font-weight: ; */
     margin: 0;
 }
-.mrp-offer-box{
-    /* padding-top: 10px; */
-}
+
 .mrp{
     font-size: 14px;
 }
@@ -968,6 +963,7 @@ li::marker{
     display: none;
 }
 }
+
 @media screen and (min-width:960px){
     .header-container-desk{
         margin-inline-start:124px;
