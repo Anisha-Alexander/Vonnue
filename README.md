@@ -1,4 +1,5 @@
 # Vonnue
 
 Completed 60 videos of 118
-Started Code Malayalam
+Cloned websites
+Learning React tutorials 
